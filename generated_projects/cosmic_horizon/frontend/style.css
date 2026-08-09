@@ -1,0 +1,412 @@
+/* full style.css */
+:root {
+    --primary-color: #212121;
+    --secondary-color: #333333;
+    --background-color: #f7f7f7;
+    --text-color: #333333;
+    --hover-color: #333333;
+    --active-color: #333333;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    background-size: 100% 200%;
+    background-position: 0% 100%;
+    transition: background-position 1s ease-in-out;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    background-size: 100% 200%;
+    background-position: 0% 100%;
+    transition: background-position 1s ease-in-out;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.hero-content button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background-color: var(--hover-color);
+}
+
+.stats {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.stats p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.about {
+    padding: 100px;
+    background-color: var(--background-color);
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.about p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.about img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.services {
+    padding: 100px;
+    background-color: var(--background-color);
+}
+
+.services h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.services p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.service p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.gallery {
+    padding: 100px;
+    background-color: var(--background-color);
+}
+
+.gallery h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.gallery p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.testimonials {
+    padding: 100px;
+    background-color: var(--background-color);
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.testimonials p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.testimonial img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pricing {
+    padding: 100px;
+    background-color: var(--background-color);
+}
+
+.pricing h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.pricing p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.price {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.price h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.price p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.price ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price li {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.faq {
+    padding: 100px;
+    background-color: var(--background-color);
+}
+
+.faq h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.faq p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.faq {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.faq p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.contact {
+    padding: 100px;
+    background-color: var(--background-color);
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.contact p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.contact input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: var(--hover-color);
+}
+
+.capabilities {
+    padding: 100px;
+    background-color: var(--background-color);
+}
+
+.capabilities h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.capabilities p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.capability {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.capability h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.capability p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.capability img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}

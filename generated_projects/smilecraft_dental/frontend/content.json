@@ -1,0 +1,88 @@
+{
+  "editable": {
+    "text-1": {
+      "label": "<p> Dental Emergency",
+      "type": "text",
+      "value": "Dental Emergency"
+    },
+    "text-2": {
+      "label": "<h2> Smile Gallery",
+      "type": "text",
+      "value": "Smile Gallery"
+    },
+    "text-3": {
+      "label": "<p> Our cosmetic dental work",
+      "type": "text",
+      "value": "Our cosmetic dental work"
+    },
+    "text-4": {
+      "label": "<p> If you want a gorgeous smile,call us ...",
+      "type": "text",
+      "value": "If you want a gorgeous smile,call us to ask about a smile makeover."
+    },
+    "text-5": {
+      "label": "<h2> Smilemakeover",
+      "type": "text",
+      "value": "Smilemakeover"
+    },
+    "text-6": {
+      "label": "<h2> ImplantDentistry",
+      "type": "text",
+      "value": "ImplantDentistry"
+    },
+    "text-7": {
+      "label": "<p> Restore Missing Teeth",
+      "type": "text",
+      "value": "Restore Missing Teeth"
+    },
+    "text-8": {
+      "label": "<h3> Consultation",
+      "type": "text",
+      "value": "Consultation"
+    },
+    "text-9": {
+      "label": "<p> Dental Restoration Services",
+      "type": "text",
+      "value": "Dental Restoration Services"
+    },
+    "text-10": {
+      "label": "<h4> The Processof InstallingImplants",
+      "type": "text",
+      "value": "The Processof InstallingImplants"
+    },
+    "text-11": {
+      "label": "<h4> Caringfor DentalImplants",
+      "type": "text",
+      "value": "Caringfor DentalImplants"
+    },
+    "text-12": {
+      "label": "<h2> About SmileCraft Dental",
+      "type": "text",
+      "value": "About SmileCraft Dental"
+    },
+    "text-13": {
+      "label": "<h2> Contact Us",
+      "type": "text",
+      "value": "Contact Us"
+    },
+    "image-1": {
+      "label": "Preload Hero Background",
+      "type": "image",
+      "value": "https://media.istockphoto.com/id/1463138684/photo/doctor-dentist-working-in-office-using-laptop-making-video-call-conference.jpg?s=612x612&w=0&k=20&c=wY41xZDrgKhUZQqQvjvOsQq6SvKJw3NdRcqfkRiRZyE="
+    },
+    "image-2": {
+      "label": "Preload Gallery Background",
+      "type": "image",
+      "value": "https://media.istockphoto.com/id/1463138684/photo/doctor-dentist-working-in-office-using-laptop-making-video-call-conference.jpg?s=612x612&w=0&k=20&c=wY41xZDrgKhUZQqQvjvOsQq6SvKJw3NdRcqfkRiRZyE="
+    }
+  },
+  "details": [
+    {
+      "description": "",
+      "extra": {},
+      "id": "detail-custom-1782992381722",
+      "image": "",
+      "title": "test"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+html
+<!-- full index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinnacle Motors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav-pinnacle">
+        <nav>
+            <div class="nav-brand">
+                <a href="#home">Pinnacle Motors</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#inventory">Inventory</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-hamburger">
+                <button></button>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Pinnacle Motors</h1>
+            <p>We are a luxury car dealership dedicated to providing the best possible experience for our customers.</p>
+            <button>Explore Our Inventory</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1618418721668-0d1f72aa4bab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwxfHxjYXIlMjBzaG93cm9vbSUyMGludGVyaW9yfGVufDB8MHx8fDE3ODI4MzczNDd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Luxury Car Showroom">
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Pinnacle Motors is a luxury car dealership dedicated to providing the best possible experience for our customers. We have a wide range of luxury cars to choose from, and our team of experts is here to help you find the perfect vehicle for your needs.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBjYXJzfGVufDB8MHx8fDE3ODI4MzczNDd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Car Salesman">
+        </div>
+    </section>
+    <section id="inventory" class="inventory">
+        <div class="inventory-content">
+            <h2>Our Inventory</h2>
+            <p>We have a wide range of luxury cars to choose from, including sedans, SUVs, and trucks. Our inventory is constantly changing, so be sure to check back often for the latest additions.</p>
+            <button>View Inventory</button>
+        </div>
+        <div class="inventory-image">
+            <img src="https://images.unsplash.com/photo-1535448580089-c7f9490c78b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBjYXJzfGVufDB8MHx8fDE3ODI4MzczNDd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Luxury Car">
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="services-content">
+            <h2>Our Services</h2>
+            <p>We offer a range of services to help you get the most out of your luxury car. From maintenance and repair to detailing and customization, our team of experts is here to help.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="services-image">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBjYXJzfGVufDB8MHx8fDE3ODI4MzczNDd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Car Mechanic">
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+        <div class="testimonials-content">
+            <h2>What Our Customers Say</h2>
+            <p>We pride ourselves on providing the best possible experience for our customers. Here's what some of our satisfied customers have to say:</p>
+            <button>Read Testimonials</button>
+        </div>
+        <div class="testimonials-image">
+            <img src="https://images.unsplash.com/photo-1696581082048-1e952ab558cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwxfHxjYXIlMjBzaG93cm9vbSUyMGludGVyaW9yfGVufDB8MHx8fDE3ODI4MzczNDh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Customer Review">
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Get in Touch</h2>
+            <p>Have a question or want to learn more about our luxury cars? Contact us today to speak with one of our experts.</p>
+            <button>Get in Touch</button>
+        </div>
+        <div class="contact-image">
+            <img src="https://images.unsplash.com/photo-1707406768618-86104267e4fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxjYXIlMjBzaG93cm9vbSUyMGludGVyaW9yfGVufDB8MHx8fDE3ODI4MzczNDh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Customer Service">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Pinnacle Motors</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

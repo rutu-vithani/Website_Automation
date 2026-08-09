@@ -1,0 +1,213 @@
+{
+  "editable": {
+    "text-1": {
+      "label": "<h1> Viktor Oddy",
+      "type": "text",
+      "value": "Viktor Oddy"
+    },
+    "text-2": {
+      "label": "<p> The creative studio of Viktor Oddy",
+      "type": "text",
+      "value": "The creative studio of Viktor Oddy"
+    },
+    "text-3": {
+      "label": "<h2> Build thenext wave,the bold way.",
+      "type": "text",
+      "value": "Build thenext wave,the bold way."
+    },
+    "text-4": {
+      "label": "<p> I spent seven years at Apple crafting...",
+      "type": "text",
+      "value": "I spent seven years at Apple crafting products used by over a billion people. I founded Vortex Studio to bring that same level of thinking to innovators shaping what comes next."
+    },
+    "text-5": {
+      "label": "<p> The studio is deliberately small. I g...",
+      "type": "text",
+      "value": "The studio is deliberately small. I guide the creative vision on every project, backed by a veteran design crew that moves fast without cutting corners."
+    },
+    "text-6": {
+      "label": "<p> Projects start at $5,000 per month.",
+      "type": "text",
+      "value": "Projects start at $5,000 per month."
+    },
+    "text-7": {
+      "label": "<p> Viktor Oddy",
+      "type": "text",
+      "value": "Viktor Oddy"
+    },
+    "text-8": {
+      "label": "<h3> Monthly Partnership",
+      "type": "text",
+      "value": "Monthly Partnership"
+    },
+    "text-9": {
+      "label": "<p> A dedicated creative design team.You ...",
+      "type": "text",
+      "value": "A dedicated creative design team.You work directly with Viktor."
+    },
+    "text-10": {
+      "label": "<h3> Custom Project",
+      "type": "text",
+      "value": "Custom Project"
+    },
+    "text-11": {
+      "label": "<p> Fixed scope, fixed timeline.Same team...",
+      "type": "text",
+      "value": "Fixed scope, fixed timeline.Same team, same standards."
+    },
+    "text-12": {
+      "label": "<h2> Whatbuilderssay",
+      "type": "text",
+      "value": "Whatbuilderssay"
+    },
+    "text-13": {
+      "label": "<h3> evr",
+      "type": "text",
+      "value": "evr"
+    },
+    "text-14": {
+      "label": "<p> From idea to millions raised for a we...",
+      "type": "text",
+      "value": "From idea to millions raised for a web3 AI product"
+    },
+    "text-15": {
+      "label": "<h3> Automation Machines",
+      "type": "text",
+      "value": "Automation Machines"
+    },
+    "text-16": {
+      "label": "<p> Streamlining industrial automation pr...",
+      "type": "text",
+      "value": "Streamlining industrial automation processes"
+    },
+    "text-17": {
+      "label": "<h3> xPortfolio",
+      "type": "text",
+      "value": "xPortfolio"
+    },
+    "text-18": {
+      "label": "<p> Modern portfolio management platform",
+      "type": "text",
+      "value": "Modern portfolio management platform"
+    },
+    "text-19": {
+      "label": "<h2> Partner with us",
+      "type": "text",
+      "value": "Partner with us"
+    },
+    "image-1": {
+      "label": "Creative studio workspace",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?creative,studio"
+    },
+    "image-2": {
+      "label": "Product design concept",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?product,design"
+    },
+    "image-3": {
+      "label": "Abstract architecture lines",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?architecture,abstract"
+    },
+    "image-4": {
+      "label": "Modern workspace interior",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?modern,workspace"
+    },
+    "image-5": {
+      "label": "Design process sketches",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?design,process"
+    },
+    "image-6": {
+      "label": "Minimal interior design",
+      "type": "image",
+      "value": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAACUCAMAAABcDpd8AAAAY1BMVEX///8AAADExMT7+/vLy8srKyv09PTr6+v39/fm5ubw8PB/f3/f399kZGTS0tKRkZGIiIgaGhpaWlrZ2dlra2twcHAmJiazs7NISEg2Njatra2bm5u9vb2lpaUQEBA+Pj5SUlKfZzzZAAAE2UlEQVR4nO2d14KqMBRFCWWQDlJUivj/X3nBMpcSRWc4xj3JepzxIdkmp+UkappCoVAoFAqFQiLsNNRDQ/QoxOPXTW4xlrmiByIaMwqOrCeXXAo9b9kVuaVwMosxJUVHU7AB+Zfo8QjD37IRsegBCUO3xkqwSPSIRLGbCMGKneghCWKmBNunosckhvo4kyIQPSYxmIeZEkc5TYWznSnBLF/0qERgeHMlJN0fJUcJFooelQj8E0eJrehRicCoeItCSkvhTKPMnkr0qITAWxQnKZNSYx5csaOUNlPTOYtC0uyD4z4qSeu7cyViSUs24VwJKU2mxvEf0iqhBRMlGkl3R8ckO68ltZg9oxr3Scpw+8ZAioOk4cSNmxTFqZLWXl5Jehn2gbeTxFwadhqauhk6m9m/yqpp6tAe/skO611ZNmW508f/gCcsYy87te2h7b78uHxc0nf1Ks72t11j7bM4qp03DZSYNAraZOgkkn0Q3cs7N7W3nZe+D6e8xN899ZZXlum+7Iqz8EPvUPA+3et38LB3yuwQdEhbjz7rVpyyxYgcVgzD2S/MjQW67XbB5cZNm/m24FBhbhObW7udcgwqU48WNfvWzhQ9rR8QTrOsdbBK0RN7FaNul6f1M8DaT4zykb38JZ7o2b1EkyzPSA4tuCegK4LTbMAr5q9KgmI7U2olumALIymxnw4SfkoSY5S6jGgpfv4tLUr1syZ0o2cClLY9JyNWAidBnTdfrksEk5D5xDYzmtcDPxXi4MrDKYkTO9IthhM9Y5IqYSEVK2hqFDeQGtVcUiUskMjqDK3RrJcH8DmQGs2j6Nm9gkGpBNaioPUfOMGVxm/KXQ0PyWhqnNst66GLnt1LkNX7e4ACTU37oqxUnGBy857w3in4GngwyXlPTXn4gdX03VAWNUsoKRb7I34DVhcjaakbKtbUIkIllBRKCg5gtoJSigbKg5BKAVT114idKdZbSKRStBhtBFd2pF1HKIfGZ0zKdAzLhfik7QQBlAt5qjf5x0Bl6bRSIJ2N0dY2GRM9vVcgjbEYQ+lQ7CHu17SAoiybVgqoRndiKQqgsxBiu4nUddMQSwH0KqtPLQWLYXJ1cilYhBJ/8x4FXFsLkD1C22FxAeS2qUNasrgSQLwe9pW/QQp2aETP8xnI70pd2ALUtHzSdpMBmf/pbnVDnJ0O+PhElfMENREfbzzJbwndsETPdBnSjsUBAF4kJL9beQEhSX1LaIGRo3JerCfg443mmXcYzgwjETHf4E9Rjg1pr031BCjn6uTFrOPHR5rfUC+LAMNS9BAfiCQA4dU3tKVvqJ+IsClz9QQjprhB6VCRHkDq+IrJlLA+vWYzhfs7MKsAdHB6heqhF6Tj9Bs0W+SEEmeOIClcIL3b8B/uLwT9EpQ0bEq9uhJY9wqHrG0ugFpNphjrFvcKTENxwVk1R8W6NDVlzfo3Uj7KQ1+t6AuWenBYSwt8Jbok9fEeKQ5tu2/bg/Uwlz3i9KM9Irzbzlls87g0fcdx/LCuvODuAiqaP6FE50e4PjUJqtoZ9du5euVx1dijPDa6jNvMqlot/0c/XLOZr6EIoMfmedJo1LDm1febZhwzHi2NPISNtvkYTnk1n1as248nt3HTMr9Y0Wzn/zEhrjjpH52YQqFQKBQKTfsHN/FKnBfkOv8AAAAASUVORK5CYII="
+    },
+    "image-7": {
+      "label": "Technology design interface",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?technology,design"
+    },
+    "image-8": {
+      "label": "Futuristic building exterior",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?futuristic,building"
+    },
+    "image-9": {
+      "label": "Creative studio workspace",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?creative,studio"
+    },
+    "image-10": {
+      "label": "Product design concept",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?product,design"
+    },
+    "image-11": {
+      "label": "Abstract architecture lines",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?architecture,abstract"
+    },
+    "image-12": {
+      "label": "Modern workspace interior",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?modern,workspace"
+    },
+    "image-13": {
+      "label": "Design process sketches",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?design,process"
+    },
+    "image-14": {
+      "label": "Minimal interior design",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?minimal,interior"
+    },
+    "image-15": {
+      "label": "Technology design interface",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?technology,design"
+    },
+    "image-16": {
+      "label": "Futuristic building exterior",
+      "type": "image",
+      "value": "https://source.unsplash.com/900x1200/?futuristic,building"
+    },
+    "image-17": {
+      "label": "Portrait of a creative director",
+      "type": "image",
+      "value": "https://source.unsplash.com/800x1000/?portrait,creative,director"
+    },
+    "image-18": {
+      "label": "Abstract web3 technology",
+      "type": "image",
+      "value": "https://source.unsplash.com/1600x900/?web3,technology,abstract"
+    },
+    "image-19": {
+      "label": "Industrial automation machine",
+      "type": "image",
+      "value": "https://source.unsplash.com/1600x900/?industrial,automation,machine"
+    },
+    "image-20": {
+      "label": "Finance dashboard workspace",
+      "type": "image",
+      "value": "https://source.unsplash.com/1600x900/?finance,dashboard,workspace"
+    },
+    "image-21": {
+      "label": "Viktor Oddy portrait",
+      "type": "image",
+      "value": "https://source.unsplash.com/200x200/?creative,director,portrait"
+    }
+  },
+  "details": [
+    {
+      "description": "test",
+      "extra": {},
+      "id": "detail-custom-1783052816996",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAACUCAMAAABcDpd8AAAAY1BMVEX///8AAADExMT7+/vLy8srKyv09PTr6+v39/fm5ubw8PB/f3/f399kZGTS0tKRkZGIiIgaGhpaWlrZ2dlra2twcHAmJiazs7NISEg2Njatra2bm5u9vb2lpaUQEBA+Pj5SUlKfZzzZAAAE2UlEQVR4nO2d14KqMBRFCWWQDlJUivj/X3nBMpcSRWc4xj3JepzxIdkmp+UkappCoVAoFAqFQiLsNNRDQ/QoxOPXTW4xlrmiByIaMwqOrCeXXAo9b9kVuaVwMosxJUVHU7AB+Zfo8QjD37IRsegBCUO3xkqwSPSIRLGbCMGKneghCWKmBNunosckhvo4kyIQPSYxmIeZEkc5TYWznSnBLF/0qERgeHMlJN0fJUcJFooelQj8E0eJrehRicCoeItCSkvhTKPMnkr0qITAWxQnKZNSYx5csaOUNlPTOYtC0uyD4z4qSeu7cyViSUs24VwJKU2mxvEf0iqhBRMlGkl3R8ckO68ltZg9oxr3Scpw+8ZAioOk4cSNmxTFqZLWXl5Jehn2gbeTxFwadhqauhk6m9m/yqpp6tAe/skO611ZNmW508f/gCcsYy87te2h7b78uHxc0nf1Ks72t11j7bM4qp03DZSYNAraZOgkkn0Q3cs7N7W3nZe+D6e8xN899ZZXlum+7Iqz8EPvUPA+3et38LB3yuwQdEhbjz7rVpyyxYgcVgzD2S/MjQW67XbB5cZNm/m24FBhbhObW7udcgwqU48WNfvWzhQ9rR8QTrOsdbBK0RN7FaNul6f1M8DaT4zykb38JZ7o2b1EkyzPSA4tuCegK4LTbMAr5q9KgmI7U2olumALIymxnw4SfkoSY5S6jGgpfv4tLUr1syZ0o2cClLY9JyNWAidBnTdfrksEk5D5xDYzmtcDPxXi4MrDKYkTO9IthhM9Y5IqYSEVK2hqFDeQGtVcUiUskMjqDK3RrJcH8DmQGs2j6Nm9gkGpBNaioPUfOMGVxm/KXQ0PyWhqnNst66GLnt1LkNX7e4ACTU37oqxUnGBy857w3in4GngwyXlPTXn4gdX03VAWNUsoKRb7I34DVhcjaakbKtbUIkIllBRKCg5gtoJSigbKg5BKAVT114idKdZbSKRStBhtBFd2pF1HKIfGZ0zKdAzLhfik7QQBlAt5qjf5x0Bl6bRSIJ2N0dY2GRM9vVcgjbEYQ+lQ7CHu17SAoiybVgqoRndiKQqgsxBiu4nUddMQSwH0KqtPLQWLYXJ1cilYhBJ/8x4FXFsLkD1C22FxAeS2qUNasrgSQLwe9pW/QQp2aETP8xnI70pd2ALUtHzSdpMBmf/pbnVDnJ0O+PhElfMENREfbzzJbwndsETPdBnSjsUBAF4kJL9beQEhSX1LaIGRo3JerCfg443mmXcYzgwjETHf4E9Rjg1pr031BCjn6uTFrOPHR5rfUC+LAMNS9BAfiCQA4dU3tKVvqJ+IsClz9QQjprhB6VCRHkDq+IrJlLA+vWYzhfs7MKsAdHB6heqhF6Tj9Bs0W+SEEmeOIClcIL3b8B/uLwT9EpQ0bEq9uhJY9wqHrG0ugFpNphjrFvcKTENxwVk1R8W6NDVlzfo3Uj7KQ1+t6AuWenBYSwt8Jbok9fEeKQ5tu2/bg/Uwlz3i9KM9Irzbzlls87g0fcdx/LCuvODuAiqaP6FE50e4PjUJqtoZ9du5euVx1dijPDa6jNvMqlot/0c/XLOZr6EIoMfmedJo1LDm1febZhwzHi2NPISNtvkYTnk1n1as248nt3HTMr9Y0Wzn/zEhrjjpH52YQqFQKBQKTfsHN/FKnBfkOv8AAAAASUVORK5CYII=",
+      "title": "test"
+    }
+  ]
+}

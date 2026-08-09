@@ -1,0 +1,293 @@
+/* full style.css */
+:root {
+    --primary-color: #03055B;
+    --accent-color: #FFC107;
+    --background-color: #F7F7F7;
+    --text-color: #333;
+    --font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .nav-toggle {
+    display: none;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero .hero-content {
+    text-align: center;
+}
+
+.hero .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .hero-content .cta {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .hero-content .cta:hover {
+    background-color: var(--primary-color);
+}
+
+.about {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.about h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.gallery p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonials {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.testimonials p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.testimonials blockquote {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.testimonials blockquote p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials blockquote cite {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.pricing {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.pricing h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.pricing p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.pricing ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing ul li {
+    margin-bottom: 1rem;
+}
+
+.pricing ul li h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.pricing ul li p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.classes {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.classes h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.classes p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.classes ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.classes ul li {
+    margin-bottom: 1rem;
+}
+
+.classes ul li h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.classes ul li p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact form {
+    margin-bottom: 2rem;
+}
+
+.contact form label {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form button[type="submit"] {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
+
+.map {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 2rem;
+}

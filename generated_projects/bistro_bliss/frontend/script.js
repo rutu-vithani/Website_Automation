@@ -1,0 +1,156 @@
+html
+<!-- full index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bistro Bliss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Bistro Bliss</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#events" class="nav-link">Events</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <h1 class="hero-heading">Welcome to Bistro Bliss</h1>
+      <p class="hero-sub">Where every bite is a delight</p>
+      <a href="#" class="btn-primary hero-cta">Make a Reservation</a>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="sec-heading">Our Story</h2>
+      <p class="sec-sub">Bistro Bliss is a family-owned restaurant dedicated to serving the finest cuisine in a warm and inviting atmosphere.</p>
+      <div class="sec-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>Meet Our Team</span>
+      </div>
+      <ul class="team-members">
+        <li>
+          <img src="https://images.unsplash.com/photo-1667388968964-4aa652df0a9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwzfHxmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHwwfHx8MTc4MjgxNzY5Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Team Member 1">
+          <h3>John Doe</h3>
+          <p>Head Chef</p>
+        </li>
+        <li>
+          <img src="https://images.unsplash.com/photo-1667388968964-4aa652df0a9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwzfHxmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHwwfHx8MTc4MjgxNzY5Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Team Member 2">
+          <h3>Jane Doe</h3>
+          <p>Restaurant Manager</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2 class="sec-heading">Our Menu</h2>
+      <p class="sec-sub">From classic comfort food to innovative cuisine, our menu has something for everyone.</p>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Appetizers</h3>
+          <ul>
+            <li>French Onion Soup</li>
+            <li>Bruschetta</li>
+            <li>Spinach and Artichoke Dip</li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <h3>Entrees</h3>
+          <ul>
+            <li>Grilled Steak</li>
+            <li>Pan-Seared Salmon</li>
+            <li>Vegetarian Quinoa Bowl</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="sec-heading">Our Gallery</h2>
+      <p class="sec-sub">Take a look at our beautiful restaurant and our delicious dishes.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1538334421852-687c439c92f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc4MjgxNzY5Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1538334421852-687c439c92f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc4MjgxNzY5Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1538334421852-687c439c92f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc4MjgxNzY5Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Gallery Image 3">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="sec-heading">What Our Customers Say</h2>
+      <p class="sec-sub">We're proud of our reputation for excellent service and delicious food.</p>
+      <div class="testimonial-grid">
+        <div class="testimonial-item">
+          <img src="https://images.unsplash.com/photo-1538334421852-687c439c92f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc4MjgxNzY5Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Testimonial Image 1">
+          <p class="testimonial-text">Bistro Bliss is the perfect spot for a night out with friends or a romantic dinner for two.</p>
+          <h3>John Doe</h3>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://images.unsplash.com/photo-1538334421852-687c439c92f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc4MjgxNzY5Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Testimonial Image 2">
+          <p class="testimonial-text">The service at Bistro Bliss is always top-notch and the food is always delicious.</p>
+          <h3>Jane Doe</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- EVENTS -->
+  <section class="events" id="events">
+    <div class="container">
+      <h2 class="sec-heading">Upcoming Events</h2>
+      <p class="sec-sub">Stay up-to-date on our latest promotions and events.</p>
+      <div class="event-grid">
+        <div class="event-item">
+          <h3>Live Music Night</h3>
+          <p>Join us for a night of live music and great food.</p>
+          <p>When: Friday, March 17th</p>
+          <p>Time: 7pm - 10pm</p>
+        </div>
+        <div class="event-item">
+          <h3>Wine and Dine</h3>
+          <p>Enjoy a night of wine and great food with us.</p>
+          <p>When: Saturday, March 18th</p>
+          <p>Time: 6pm - 9pm</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="sec-heading">Get in Touch</h2>
+      <p class="sec-sub">Have a question or want to make a reservation? We'd love to hear from you.</p>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+      </form>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

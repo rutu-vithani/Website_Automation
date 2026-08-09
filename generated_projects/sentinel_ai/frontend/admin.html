@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin Panel - Sentinel AI</title>
+<link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+  <div id="login-screen" class="admin-screen">
+    <form id="login-form" class="admin-card">
+      <h1>Sentinel AI</h1>
+      <p class="admin-subtitle">Admin Panel</p>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autocomplete="current-password" required>
+      <button type="submit">Log in</button>
+      <p id="login-error" class="admin-error" hidden>Incorrect password.</p>
+    </form>
+  </div>
+
+  <div id="dashboard" class="admin-screen" hidden>
+    <header class="admin-header">
+      <h1>Sentinel AI <span class="admin-tag">Admin</span></h1>
+      <div>
+        <a href="/" target="_blank" class="admin-link-btn">View site</a>
+        <button id="logout-btn" class="admin-secondary-btn">Log out</button>
+      </div>
+    </header>
+
+    <nav class="admin-tabs">
+      <button class="admin-tab-btn active" data-tab="content">Site Content</button>
+      <button class="admin-tab-btn" data-tab="details">Detail Pages</button>
+    </nav>
+
+    <section id="tab-content" class="admin-tab-panel">
+      <p class="admin-hint">Content is grouped by section — click a section to expand it. Edit any text or image used on the live site, or use "+ Add field" under a section to add a custom field there. Changes appear on the site as soon as you save.</p>
+      <div id="content-list" class="admin-list"></div>
+    </section>
+
+    <section id="tab-details" class="admin-tab-panel" hidden>
+      <p class="admin-hint">Each "View Details" style button on the site opens one of these pages. Add extra custom fields (price, hours, specs, anything) per item.</p>
+      <div id="details-list" class="admin-list"></div>
+      <button id="add-detail-btn" class="admin-secondary-btn">+ Add new detail page</button>
+    </section>
+
+    <div class="admin-save-bar">
+      <span id="save-status"></span>
+      <button id="save-btn" class="admin-primary-btn">Save changes</button>
+    </div>
+  </div>
+
+<script src="/admin.js"></script>
+</body>
+</html>

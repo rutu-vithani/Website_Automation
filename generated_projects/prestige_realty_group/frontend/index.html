@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Realty Group - Your Dream Home Awaits</title>
+    <!-- Metadata for Database Agent -->
+    <!-- Business Type: real estate agency -->
+    <!-- Palette: Deep navy, warm gold/champagne, white/off-white -->
+    <!-- Fonts: Playfair Display (headings), Inter (body) -->
+    <!-- Sections: hero, featured-listings, about-us, meet-the-agents, how-it-works, testimonials, neighborhoods, mortgage-calculator, contact-us, footer -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">Prestige Realty Group</a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#featured-listings" class="nav-link">Listings</a></li>
+                    <li><a href="#about-us" class="nav-link">About Us</a></li>
+                    <li><a href="#meet-the-agents" class="nav-link">Agents</a></li>
+                    <li><a href="#how-it-works" class="nav-link">Process</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#neighborhoods" class="nav-link">Neighborhoods</a></li>
+                    <li><a href="#mortgage-calculator" class="nav-link">Mortgage</a></li>
+                    <li><a href="#contact-us" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#contact-us" class="btn btn-primary nav-cta">Schedule a Consultation</a>
+            </nav>
+            <button class="hamburger-menu" aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1682184805271-11671b7ecf4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxsdXh1cnklMjBob21lcyUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3ODI5Njg3MDV8MA&ixlib=rb-4.1.0&q=80&w=1920" alt="Luxurious modern living room interior" class="hero-bg-image" loading="eager">
+            <div class="container hero-content">
+                <p class="hero-eyebrow">Your Journey to Exquisite Living Starts Here</p>
+                <h1 class="hero-headline">Discover Unparalleled Luxury <br>and Service</h1>
+                <p class="hero-subheadline">Prestige Realty Group transforms your vision of home into a stunning reality. Explore a curated selection of premier properties.</p>
+                <div class="hero-actions">
+                    <a href="#featured-listings" class="btn btn-primary hero-cta">Explore Listings</a>
+                    <a href="#contact-us" class="btn btn-secondary hero-cta">Get a Valuation</a>
+                </div>
+                <div class="property-search-bar">
+                    <input type="text" placeholder="Search by Location, Address, or Keywords..." aria-label="Search properties">
+                    <button class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-listings" class="section featured-listings">
+            <div class="container">
+                <h2 class="section-title">Exclusive Properties</h2>
+                <p class="section-subtitle">Handpicked selections of the finest homes and estates, waiting for you.</p>
+                <div class="listing-filters">
+                    <select aria-label="Filter by property type">
+                        <option value="">Property Type</option>
+                        <option value="house">House</option>
+                        <option value="condo">Condo</option>
+                        <option value="land">Land</option>
+                    </select>
+                    <select aria-label="Filter by price range">
+                        <option value="">Price Range</option>
+                        <option value="500k-1m">$500K - $1M</option>
+                        <option value="1m-2m">$1M - $2M</option>
+                        <option value="2m+">$2M+</option>
+                    </select>
+                    <input type="text" placeholder="Min Beds" aria-label="Minimum bedrooms">
+                    <input type="text" placeholder="Min Baths" aria-label="Minimum bathrooms">
+                    <button class="btn btn-secondary filter-btn">Apply Filters</button>
+                </div>
+                <div class="listings-grid">
+                    <article class="listing-card">
+                        <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyZXNpZGVudGlhbCUyMHByb3BlcnR5JTIwbGlzdGluZ3N8ZW58MHwwfHx8MTc4Mjk2ODcwN3ww&ixlib=rb-4.1.0&q=80&w=800" alt="Modern white house with large windows" loading="lazy">
+                        <div class="card-content">
+                            <h3>$1,750,000</h3>
+                            <p class="listing-address">123 Havenwood Lane, Cityville, CA</p>
+                            <div class="listing-details">
+                                <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2,800 SqFt</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </article>
+                    <article class="listing-card">
+                        <img src="https://images.unsplash.com/photo-1760129745103-91c4022ed5fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyZXNpZGVudGlhbCUyMHByb3BlcnR5JTIwbGlzdGluZ3N8ZW58MHwwfHx8MTc4Mjk2ODcwN3ww&ixlib=rb-4.1.0&q=80&w=800" alt="Contemporary home with dark exterior and manicured lawn" loading="lazy">
+                        <div class="card-content">
+                            <h3>$2,300,000</h3>
+                            <p class="listing-address">456 Summit Drive, Hillcrest, NY</p>
+                            <div class="listing-details">
+                                <span><i class="fas fa-bed"></i> 5 Beds</span>
+                                <span><i class="fas fa-bath"></i> 4.5 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 3,500 SqFt</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </article>
+                    <article class="listing-card">
+                        <img src="https://images.unsplash.com/photo-1766288019700-815af4b6c39a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyZXNpZGVudGlhbCUyMHByb3BlcnR5JTIwbGlzdGluZ3N8ZW58MHwwfHx8MTc4Mjk2ODcwN3ww&ixlib=rb-4.1.0&q=80&w=800" alt="Elegant house with large windows and brick facade" loading="lazy">
+                        <div class="card-content">
+                            <h3>$1,980,000</h3>
+                            <p class="listing-address">789 Grandview Ave, Lakeside, FL</p>
+                            <div class="listing-details">
+                                <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                <span><i class="fas fa-bath"></i> 4 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 3,100 SqFt</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us" class="section about-us">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1531591022136-eb8b0da1e6d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBleHRlcmlvcnxlbnwwfDB8fHwxNzgyOTY4NzA4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Modern architectural building exterior" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">About Prestige Realty Group</h2>
+                    <p class="section-subtitle">Redefining real estate with integrity and excellence.</p>
+                    <p>At Prestige Realty Group, we believe in a real estate experience that is as distinguished as our clients. With over two decades of expertise in the luxury market, we've cultivated a reputation for unparalleled service, deep market knowledge, and a commitment to achieving exceptional results.</p>
+                    <p>We are more than just agents; we are trusted advisors, dedicated to navigating the complexities of buying and selling premium properties with discretion and efficiency. Our client-centric approach ensures a seamless and rewarding journey, from the initial consultation to the final closing.</p>
+                    <div class="trust-signals">
+                        <div class="signal-item">
+                            <i class="fas fa-award"></i>
+                            <span>20+ Years Experience</span>
+                        </div>
+                        <div class="signal-item">
+                            <i class="fas fa-home"></i>
+                            <span>500+ Properties Sold</span>
+                        </div>
+                        <div class="signal-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Client-Centric Approach</span>
+                        </div>
+                    </div>
+                    <a href="#contact-us" class="btn btn-primary">Learn More & Connect</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="meet-the-agents" class="section meet-the-agents">
+            <div class="container">
+                <h2 class="section-title">Meet Our Expert Agents</h2>
+                <p class="section-subtitle">Our dedicated professionals are committed to your success in the real estate market.</p>
+                <div class="agents-grid">
+                    <article class="agent-card">
+                        <img src="https://images.unsplash.com/photo-1780733064206-4f200e41daa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyZWFsJTIwZXN0YXRlJTIwYWdlbnQlMjBwb3J0cmFpdHN8ZW58MHwwfHx8MTc4Mjk2ODE5NHww&ixlib=rb-4.1.0&q=80&w=400" alt="Portrait of Sarah Chen, a real estate agent" loading="lazy">
+                        <div class="card-content">
+                            <h3>Sarah Chen</h3>
+                            <p class="agent-title">Lead Broker</p>
+                            <p class="agent-bio">Sarah brings a wealth of experience and a keen eye for luxury properties, consistently exceeding client expectations.</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="Sarah Chen on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Sarah Chen on Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="agent-card">
+                        <img src="https://images.unsplash.com/photo-1721956980244-90cc88c1ce8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyZWFsJTIwZXN0YXRlJTIwYWdlbnQlMjBwb3J0cmFpdHN8ZW58MHwwfHx8MTc4Mjk2ODE5NHww&ixlib=rb-4.1.0&q=80&w=400" alt="Portrait of Michael Davis, a real estate agent" loading="lazy">
+                        <div class="card-content">
+                            <h3>Michael Davis</h3>
+                            <p class="agent-title">Senior Sales Associate</p>
+                            <p class="agent-bio">Known for his negotiation skills and extensive network, Michael ensures his clients find their perfect investment.</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="Michael Davis on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Michael Davis on Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="agent-card">
+                        <img src="https://images.unsplash.com/photo-1608875848903-06eec0bd71e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyZWFsJTIwZXN0YXRlJTIwYWdlbnQlMjBwb3J0cmFpdHN8ZW58MHwwfHx8MTc4Mjk2ODE5NHww&ixlib=rb-4.1.0&q=80&w=400" alt="Portrait of Emily White, a real estate agent" loading="lazy">
+                        <div class="card-content">
+                            <h3>Emily White</h3>
+                            <p class="agent-title">Luxury Property Specialist</p>
+                            <p class="agent-bio">Emily's passion for design and architecture helps clients visualize the potential in every property.</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="Emily White on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Emily White on Facebook"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="section how-it-works">
+            <div class="container">
+                <h2 class="section-title">Our Seamless Process</h2>
+                <p class="section-subtitle">We guide you every step of the way to achieve your real estate goals.</p>
+                <div class="process-steps">
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-comments"></i></div>
+                        <h3>1. Initial Consultation</h3>
+                        <p>We begin by understanding your unique needs, preferences, and investment goals to tailor our approach.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-binoculars"></i></div>
+                        <h3>2. Property Discovery</h3>
+                        <p>Our team leverages exclusive access and market insights to curate a selection of properties that match your criteria.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-house-user"></i></div>
+                        <h3>3. Guided Viewings</h3>
+                        <p>Experience personalized tours of properties, with expert insights to help you make informed decisions.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-handshake-alt"></i></div>
+                        <h3>4. Offer & Closing</h3>
+                        <p>We handle all negotiations and paperwork, ensuring a smooth and successful transaction from start to finish.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Hear from those who have experienced the Prestige difference.</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Prestige Realty Group delivered beyond our expectations. Their professionalism and dedication helped us find our dream home effortlessly."</p>
+                        <div class="client-info">
+                            <span class="client-name">Eleanor & Richard Vance</span>
+                            <span class="client-location">Beverly Hills, CA</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"The team at Prestige made selling our estate a truly smooth process. Their market knowledge is unmatched, and their service was impeccable."</p>
+                        <div class="client-info">
+                            <span class="client-name">Dr. Evelyn Reed</span>
+                            <span class="client-location">Greenwich, CT</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"From finding the perfect location to closing the deal, Prestige Realty Group provided exceptional guidance and support. Highly recommend!"</p>
+                        <div class="client-info">
+                            <span class="client-name">Mr. & Mrs. Sterling</span>
+                            <span class="client-location">Miami Beach, FL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="neighborhoods" class="section neighborhoods">
+            <div class="container">
+                <h2 class="section-title">Explore Premier Neighborhoods</h2>
+                <p class="section-subtitle">Discover the perfect community to call home with our in-depth guides.</p>
+                <div class="neighborhoods-grid">
+                    <article class="neighborhood-card">
+                        <img src="https://images.unsplash.com/photo-1435738623530-c32d3631932f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxjaXR5c2NhcGVzJTIwd2l0aCUyMHNreXNjcmFwZXJzfGVufDB8MHx8fDE3ODI5Njg3MDl8MA&ixlib=rb-4.1.0&q=80&w=600" alt="New York City skyline at sunset" loading="lazy">
+                        <div class="card-content">
+                            <h3>Metropolitan Heights</h3>
+                            <p>Vibrant city living with unparalleled amenities and cultural experiences. Ideal for urban professionals.</p>
+                            <a href="#" class="btn btn-outline">View Homes</a>
+                        </div>
+                    </article>
+                    <article class="neighborhood-card">
+                        <img src="https://images.unsplash.com/photo-1534795990280-989516f4dec3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxjaXR5c2NhcGVzJTIwd2l0aCUyMHNreXNjcmFwZXJzfGVufDB8MHx8fDE3ODI5Njg3MDl8MA&ixlib=rb-4.1.0&q=80&w=600" alt="Modern suburban neighborhood street" loading="lazy">
+                        <div class="card-content">
+                            <h3>Willow Creek Estates</h3>
+                            <p>Spacious homes, top-rated schools, and lush green spaces. Perfect for families seeking tranquility.</p>
+                            <a href="#" class="btn btn-outline">View Homes</a>
+                        </div>
+                    </article>
+                    <article class="neighborhood-card">
+                        <img src="https://images.unsplash.com/photo-1658800163313-0f9796a15a44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxjaXR5c2NhcGVzJTIwd2l0aCUyMHNreXNjcmFwZXJzfGVufDB8MHx8fDE3ODI5Njg3MDl8MA&ixlib=rb-4.1.0&q=80&w=600" alt="Downtown city street with modern buildings" loading="lazy">
+                        <div class="card-content">
+                            <h3>Coastal Bluffs</h3>
+                            <p>Exclusive beachfront properties with stunning ocean views and a relaxed, upscale lifestyle.</p>
+                            <a href="#" class="btn btn-outline">View Homes</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="mortgage-calculator" class="section mortgage-calculator">
+            <div class="container mortgage-grid">
+                <div class="calculator-form-wrapper">
+                    <h2 class="section-title">Estimate Your Mortgage</h2>
+                    <p class="section-subtitle">Plan your investment with our easy-to-use mortgage calculator.</p>
+                    <form class="mortgage-form">
+                        <div class="form-group">
+                            <label for="home-price">Home Price ($)</label>
+                            <input type="number" id="home-price" name="home-price" value="500000" min="0" required aria-label="Home price in dollars">
+                        </div>
+                        <div class="form-group">
+                            <label for="down-payment">Down Payment ($)</label>
+                            <input type="number" id="down-payment" name="down-payment" value="100000" min="0" required aria-label="Down payment in dollars">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest-rate">Interest Rate (%)</label>
+                            <input type="number" id="interest-rate" name="interest-rate" value="4.5" step="0.01" min="0" required aria-label="Interest rate percentage">
+                        </div>
+                        <div class="form-group">
+                            <label for="loan-term">Loan Term (Years)</label>
+                            <input type="number" id="loan-term" name="loan-term" value="30" min="1" max="50" required aria-label="Loan term in years">
+                        </div>
+                        <button type="submit" class="btn btn-primary calculate-btn">Calculate Mortgage</button>
+                    </form>
+                    <div class="calculation-result">
+                        <h3>Estimated Monthly Payment: <span id="monthly-payment">$2,027.03</span></h3>
+                        <p>This estimate is for informational purposes only. Actual payments may vary.</p>
+                        <a href="#contact-us" class="btn btn-secondary">Get Pre-Approved Today</a>
+                    </div>
+                </div>
+                <div class="calculator-image">
+                    <img src="https://images.unsplash.com/photo-1633505899118-4ca6bd143043?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHx1cHNjYWxlJTIwbGl2aW5nJTIwcm9vbSUyMGRlY29yfGVufDB8MHx8fDE3ODI5Njg3MTF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Elegant home office with laptop and financial documents" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="section contact-us">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">We're here to answer your questions and help you achieve your real estate aspirations.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <address>
+                            100 Prestige Plaza, Suite 200<br>
+                            Metropolis, CA 90210
+                        </address>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+15551234567">(555) 123-4567</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@prestigerealty.com">info@prestigerealty.com</a>
+                    </div>
+                    <div class="map-placeholder">
+                        <!-- Placeholder for a map embed -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.018151240032!2d-122.41941568468171!3d37.77492997975895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b3e8c8b8b%3A0x8085808b3e8c8b8b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1625456789012!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location of Prestige Realty Group"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required aria-label="Your full name">
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required aria-label="Your email address">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Your Phone (Optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" aria-label="Your phone number">
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="I'm interested in..." required aria-label="Your message"></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                        <div class="form-status" id="form-status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">Prestige Realty Group</a>
+                <p>Leading the way in luxury real estate, connecting discerning clients with extraordinary properties.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Prestige Realty Group on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Prestige Realty Group on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Prestige Realty Group on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Prestige Realty Group on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#featured-listings">Listings</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#meet-the-agents">Our Agents</a></li>
+                    <li><a href="#how-it-works">Our Process</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 100 Prestige Plaza, Suite 200, Metropolis, CA 90210</p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+15551234567">(555) 123-4567</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@prestigerealty.com">info@prestigerealty.com</a></p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Receive exclusive property alerts and market insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" aria-label="Enter your email for newsletter">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Prestige Realty Group. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!--
+Business: Viktor Oddy
+Type: creative design studio
+Palette: --color-primary-dark: #051A24, --color-secondary-dark: #0D212C, --color-light-text: #F6FCFF, --color-muted-light-text: #E0EBF0, --color-muted-dark-text: #273C46, --color-background: #ffffff
+Fonts: PP Neue Montreal (body, sans-serif), PP Mondwest (headings/accents, serif)
+Sections: ['hero', 'infinite-image-marquee', 'testimonial-quote-section', 'pricing-section', 'testimonial-carousel', 'projects-section', 'partner-section', 'footer', 'copyright-bar', 'fixed-bottom-navigation']
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Viktor Oddy – Creative Design Studio</title>
+<link href="style.css" rel="stylesheet"/>
+<!-- PP Neue Montreal from Webflow CDN -->
+<link href="https://assets.website-files.com/62ee0d2417757912d774f762/css/pp-neue-montreal.webflow.b53c6a461.css" rel="stylesheet"/>
+<link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;V&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+</head>
+<body>
+<main>
+<section class="section hero-section animate-fade-in-up" id="hero">
+<div class="hero-content">
+<h1 class="hero-logo" data-edit-id="text-1">Viktor Oddy</h1>
+<p class="hero-tagline" data-edit-id="text-2">The creative studio of Viktor Oddy</p>
+<h2 class="hero-main-heading" data-edit-id="text-3">Build the <span class="font-mondwest">next wave</span>,<br/><span class="font-mondwest">the bold way.</span></h2>
+<div class="hero-description">
+<p data-edit-id="text-4">I spent seven years at Apple crafting products used by over a billion people. I founded Vortex Studio to bring that same level of thinking to innovators shaping what comes next.</p>
+<p data-edit-id="text-5">The studio is deliberately small. I guide the creative vision on every project, backed by a veteran design crew that moves fast without cutting corners.</p>
+<p data-edit-id="text-6">Projects start at $5,000 per month.</p>
+</div>
+<div class="hero-buttons">
+<a class="button button-primary" href="#partner">Start a chat</a>
+<a class="button button-secondary" href="#projects">View projects</a>
+</div>
+</div>
+</section>
+<section class="section marquee-section animate-fade-in-up" id="marquee">
+<div class="marquee-container">
+<div class="marquee-track">
+<img alt="Creative studio workspace" data-edit-id="image-1" loading="lazy" src="https://source.unsplash.com/900x1200/?creative,studio"/>
+<img alt="Product design concept" data-edit-id="image-2" loading="lazy" src="https://source.unsplash.com/900x1200/?product,design"/>
+<img alt="Abstract architecture lines" data-edit-id="image-3" loading="lazy" src="https://source.unsplash.com/900x1200/?architecture,abstract"/>
+<img alt="Modern workspace interior" data-edit-id="image-4" loading="lazy" src="https://source.unsplash.com/900x1200/?modern,workspace"/>
+<img alt="Design process sketches" data-edit-id="image-5" loading="lazy" src="https://source.unsplash.com/900x1200/?design,process"/>
+<img alt="Minimal interior design" data-edit-id="image-6" loading="lazy" src="https://source.unsplash.com/900x1200/?minimal,interior"/>
+<img alt="Technology design interface" data-edit-id="image-7" loading="lazy" src="https://source.unsplash.com/900x1200/?technology,design"/>
+<img alt="Futuristic building exterior" data-edit-id="image-8" loading="lazy" src="https://source.unsplash.com/900x1200/?futuristic,building"/>
+<!-- Duplicates for infinite scroll -->
+<img alt="Creative studio workspace" data-edit-id="image-9" loading="lazy" src="https://source.unsplash.com/900x1200/?creative,studio"/>
+<img alt="Product design concept" data-edit-id="image-10" loading="lazy" src="https://source.unsplash.com/900x1200/?product,design"/>
+<img alt="Abstract architecture lines" data-edit-id="image-11" loading="lazy" src="https://source.unsplash.com/900x1200/?architecture,abstract"/>
+<img alt="Modern workspace interior" data-edit-id="image-12" loading="lazy" src="https://source.unsplash.com/900x1200/?modern,workspace"/>
+<img alt="Design process sketches" data-edit-id="image-13" loading="lazy" src="https://source.unsplash.com/900x1200/?design,process"/>
+<img alt="Minimal interior design" data-edit-id="image-14" loading="lazy" src="https://source.unsplash.com/900x1200/?minimal,interior"/>
+<img alt="Technology design interface" data-edit-id="image-15" loading="lazy" src="https://source.unsplash.com/900x1200/?technology,design"/>
+<img alt="Futuristic building exterior" data-edit-id="image-16" loading="lazy" src="https://source.unsplash.com/900x1200/?futuristic,building"/>
+</div>
+</div>
+</section>
+<section class="section quote-section animate-fade-in-up" id="quote-section">
+<svg class="quote-icon" fill="none" height="48" viewbox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.75 18C7.75 19.1046 6.85457 20 5.75 20C4.64543 20 3.75 19.1046 3.75 18V12C3.75 9.10051 6.00051 6.75 8.89949 6.75H9.25C9.66421 6.75 10 6.36421 10 5.95C10 5.53579 9.66421 5.15 9.25 5.15H8.89949C5.12288 5.15 2 8.35821 2 12V18C2 19.933 3.567 21.5 5.5 21.5C7.433 21.5 9 19.933 9 18V14.75H7.75V18ZM17.75 18C17.75 19.1046 16.8546 20 15.75 20C14.6454 20 13.75 19.1046 13.75 18V12C13.75 9.10051 16.0005 6.75 18.8995 6.75H19.25C19.6642 6.75 20 6.36421 20 5.95C20 5.53579 19.6642 5.15 19.25 5.15H18.8995C15.1229 5.15 12 8.35821 12 12V18C12 19.933 13.567 21.5 15.5 21.5C17.433 21.5 19 19.933 19 18V14.75H17.75V18Z" fill="var(--color-primary-dark)"></path>
+</svg>
+<blockquote class="large-quote">
+                I left <span class="font-mondwest">Apple</span> to build the studio I always wanted to work with
+            </blockquote>
+<p class="quote-author" data-edit-id="text-7">Viktor Oddy</p>
+<div class="logo-row">
+<span>Apple</span>
+<span>IDEO</span>
+<span>Polygon</span>
+</div>
+<div class="parallax-image-wrapper">
+<img alt="Portrait of a creative director" class="parallax-image" data-edit-id="image-17" loading="lazy" src="https://source.unsplash.com/800x1000/?portrait,creative,director"/>
+</div>
+</section>
+<section class="section pricing-section animate-fade-in-up" id="pricing">
+<div class="pricing-grid-container">
+<div class="pricing-card pricing-card-dark">
+<h3 class="pricing-title" data-edit-id="text-8">Monthly Partnership</h3>
+<p class="pricing-description" data-edit-id="text-9">A dedicated creative design team.<br/>You work directly with Viktor.</p>
+<div class="pricing-price">
+<span class="price-amount">$5,000</span>
+<span class="price-period">Monthly</span>
+</div>
+<div class="pricing-buttons">
+<a class="button button-secondary-light" href="https://halaskastudio.com/./book">Start a chat</a>
+<a class="button button-secondary-light" href="https://halaskastudio.com/./book">How it works</a>
+</div>
+</div>
+<div class="pricing-card pricing-card-light">
+<h3 class="pricing-title" data-edit-id="text-10">Custom Project</h3>
+<p class="pricing-description" data-edit-id="text-11">Fixed scope, fixed timeline.<br/>Same team, same standards.</p>
+<div class="pricing-price">
+<span class="price-amount">$5,000</span>
+<span class="price-period">Minimum</span>
+</div>
+<div class="pricing-buttons">
+<a class="button button-primary" href="#partner">Start a chat</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section testimonials-section animate-fade-in-up" id="testimonials">
+<div class="testimonials-header-wrapper">
+<div class="testimonials-header">
+<h2 class="section-title" data-edit-id="text-12">What <span class="font-mondwest">builders</span> say</h2>
+<div class="clutch-rating">
+<div class="star-icons">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path></svg>
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path></svg>
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path></svg>
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path></svg>
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path></svg>
+</div>
+<span>Clutch 5/5</span>
+</div>
+</div>
+</div>
+<div class="carousel-container">
+<div class="carousel-track">
+<!-- Testimonial cards will be populated and duplicated by JS -->
+</div>
+<button aria-label="Previous testimonial" class="carousel-button carousel-button-prev">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 18L9 12L15 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<button aria-label="Next testimonial" class="carousel-button carousel-button-next">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 18L15 12L9 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</section>
+<section class="section projects-section animate-fade-in-up" id="projects">
+<div class="projects-container">
+<div class="project-item">
+<div class="project-text">
+<h3 class="project-name font-mondwest" data-edit-id="text-13">evr</h3>
+<p class="project-description" data-edit-id="text-14">From idea to millions raised for a web3 AI product</p>
+</div>
+<img alt="Abstract web3 technology" data-edit-id="image-18" loading="lazy" src="https://source.unsplash.com/1600x900/?web3,technology,abstract"/>
+</div>
+<div class="project-item">
+<div class="project-text">
+<h3 class="project-name font-mondwest" data-edit-id="text-15">Automation Machines</h3>
+<p class="project-description" data-edit-id="text-16">Streamlining industrial automation processes</p>
+</div>
+<img alt="Industrial automation machine" data-edit-id="image-19" loading="lazy" src="https://source.unsplash.com/1600x900/?industrial,automation,machine"/>
+</div>
+<div class="project-item">
+<div class="project-text">
+<h3 class="project-name font-mondwest" data-edit-id="text-17">xPortfolio</h3>
+<p class="project-description" data-edit-id="text-18">Modern portfolio management platform</p>
+</div>
+<img alt="Finance dashboard workspace" data-edit-id="image-20" loading="lazy" src="https://source.unsplash.com/1600x900/?finance,dashboard,workspace"/>
+</div>
+</div>
+</section>
+<section class="section partner-section animate-fade-in-up" id="partner">
+<div class="partner-container">
+<h2 class="partner-heading font-mondwest" data-edit-id="text-19">Partner with us</h2>
+<a class="button button-primary button-with-avatar" href="#partner">
+<img alt="Viktor Oddy portrait" class="button-avatar" data-edit-id="image-21" src="https://source.unsplash.com/200x200/?creative,director,portrait"/>
+                    Start chat with Viktor
+                </a>
+</div>
+</section>
+</main>
+<footer class="section footer-section animate-fade-in-up" id="footer">
+<div class="footer-content">
+<a class="button button-primary" href="#partner">Start a chat</a>
+<div class="footer-links-wrapper">
+<svg class="arrow-icon" fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<div class="footer-link-column">
+<a href="#">Services</a>
+<a href="#projects">Work</a>
+<a href="#hero">About</a>
+</div>
+<div class="footer-link-column">
+<a href="https://x.com" rel="noopener noreferrer" target="_blank">x.com</a>
+<a href="https://linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+</div>
+</div>
+</div>
+</footer>
+<div class="copyright-bar animate-fade-in-up" id="copyright">
+<div class="copyright-content">
+<span>Vortex Studio Limited</span>
+<span>Austin, USA</span>
+</div>
+</div>
+<nav class="fixed-bottom-nav" id="fixed-nav">
+<span class="fixed-nav-logo font-mondwest">V</span>
+<a class="button button-primary" href="#partner">Start a chat</a>
+</nav>
+<script defer="" src="script.js"></script>
+<script src="/content-loader.js"></script></body>
+</html>

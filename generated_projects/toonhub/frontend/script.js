@@ -1,0 +1,2 @@
+bash
+playwright install

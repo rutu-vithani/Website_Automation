@@ -1,0 +1,286 @@
+<!--
+Metadata for Database Agent:
+Business Type: Restaurant
+Palette: Warm terracotta, cream, deep brown, charcoal, muted greens
+Fonts: Serif for headings (e.g., Lora), Sans-serif for body (e.g., Inter)
+Sections: Home, About, Menu, Gallery, Testimonials, Reservation/Contact, Footer
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember & Oak - Wood-Fired Grill Restaurant</title>
+    <meta name="description" content="Experience the warmth and flavor of Ember & Oak, a premium wood-fired grill restaurant. Savor expertly crafted dishes and exquisite cocktails.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#home" class="header__logo" aria-label="Ember & Oak Home">Ember & Oak</a>
+            <nav class="header__nav" aria-label="Main navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#home" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="#about" class="header__nav-link">About Us</a></li>
+                    <li class="header__nav-item"><a href="#menu" class="header__nav-link">Menu</a></li>
+                    <li class="header__nav-item"><a href="#gallery" class="header__nav-link">Gallery</a></li>
+                    <li class="header__nav-item"><a href="#testimonials" class="header__nav-link">Testimonials</a></li>
+                    <li class="header__nav-item"><a href="#contact" class="header__nav-link">Reservations</a></li>
+                </ul>
+                <button class="header__cta-button button button--primary">Reserve a Table</button>
+            </nav>
+            <button class="header__menu-toggle" aria-label="Toggle navigation menu">
+                <span class="header__menu-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero section">
+            <div class="hero__background-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1550927001-03fd6b9e9262?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHx3b29kJTIwZmlyZWQlMjBncmlsbCUyMHJlc3RhdXJhbnQlMjBpbnRlcmlvciUyMG5pZ2h0fGVufDB8MHx8fDE3ODI4OTI0Njd8MA&ixlib=rb-4.1.0&q=80&w=1600" alt="Warmly lit wood fired grill restaurant interior at night" class="hero__background-image" loading="eager">
+            <div class="container hero__content">
+                <p class="hero__eyebrow">Experience Culinary Excellence</p>
+                <h1 class="hero__title">Where Fire Meets Flavor</h1>
+                <p class="hero__subtitle">Savor the art of wood-fired cooking in an atmosphere of rustic elegance.</p>
+                <div class="hero__actions">
+                    <a href="#menu" class="button button--primary">View Our Menu</a>
+                    <a href="#contact" class="button button--secondary">Book a Table</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section reveal-section">
+            <div class="container about__container">
+                <div class="about__image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxvcGVuJTIwZmxhbWUlMjBjb29raW5nfGVufDB8MHx8fDE3ODI4OTI0NzN8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Chef tending to an open flame grill in a professional kitchen" class="about__image" loading="lazy">
+                </div>
+                <div class="about__content">
+                    <h2 class="about__title">Our Story, Our Passion</h2>
+                    <p class="about__description">At Ember & Oak, we believe in the transformative power of fire. Our journey began with a simple passion: to bring the authentic, rich flavors of wood-fired cooking to your table. We meticulously source the finest, freshest ingredients, allowing the natural essence to shine through with every dish.</p>
+                    <p class="about__description">Our chefs, true artisans of the flame, combine traditional techniques with modern culinary innovation. From perfectly seared steaks to slow-roasted vegetables, every item on our menu is a testament to our commitment to quality, flavor, and an unforgettable dining experience. Join us and discover the heart of our kitchen.</p>
+                    <a href="#menu" class="button button--primary">Explore More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu section reveal-section">
+            <div class="container menu__container">
+                <h2 class="menu__title">Our Signature Creations</h2>
+                <p class="menu__subtitle">Crafted with care, perfected by fire. A taste of tradition and innovation.</p>
+                <div class="menu__grid">
+                    <article class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxncmlsbGVkJTIwc3RlYWslMjBkaXNofGVufDB8MHx8fDE3ODI4OTI0Njl8MA&ixlib=rb-4.1.0&q=80&w=600" alt="Perfectly grilled steak with herbs and a side of sauce" class="menu-card__image" loading="lazy">
+                        <h3 class="menu-card__title">Wood-Fired Ribeye</h3>
+                        <p class="menu-card__description">Aged prime ribeye, perfectly seared over oak embers, served with our signature herb butter and seasonal greens.</p>
+                        <span class="menu-card__price">$48</span>
+                    </article>
+                    <article class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1606791422814-b32c705e3e2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyb2FzdGVkJTIwdmVnZXRhYmxlcyUyMHBsYXRlfGVufDB8MHx8fDE3ODI4OTI0NzB8MA&ixlib=rb-4.1.0&q=80&w=600" alt="Assortment of roasted seasonal vegetables on a plate" class="menu-card__image" loading="lazy">
+                        <h3 class="menu-card__title">Ember Roasted Vegetables</h3>
+                        <p class="menu-card__description">A vibrant selection of garden-fresh vegetables, roasted slowly in our wood oven with olive oil and fresh thyme.</p>
+                        <span class="menu-card__price">$22</span>
+                    </article>
+                    <article class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1765987592688-7ece2ca83487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxjcmFmdCUyMGNvY2t0YWlsJTIwYmFyfGVufDB8MHx8fDE3ODI4OTI0NzF8MA&ixlib=rb-4.1.0&q=80&w=600" alt="Expertly crafted cocktail with garnishes in a bar setting" class="menu-card__image" loading="lazy">
+                        <h3 class="menu-card__title">Smoked Old Fashioned</h3>
+                        <p class="menu-card__description">Our classic Old Fashioned, infused with subtle smoke and served with a hand-carved ice sphere.</p>
+                        <span class="menu-card__price">$16</span>
+                    </article>
+                    <article class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxncmlsbGVkJTIwc3RlYWslMjBkaXNofGVufDB8MHx8fDE3ODI4OTI0Njl8MA&ixlib=rb-4.1.0&q=80&w=600" alt="Succulent grilled lamb chops served with a side of mashed potatoes" class="menu-card__image" loading="lazy">
+                        <h3 class="menu-card__title">Grilled Lamb Chops</h3>
+                        <p class="menu-card__description">Tender lamb chops marinated in rosemary and garlic, grilled to perfection and served with mint chimichurri.</p>
+                        <span class="menu-card__price">$42</span>
+                    </article>
+                    <article class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1778996525694-e87e5eff7a76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyb2FzdGVkJTIwdmVnZXRhYmxlcyUyMHBsYXRlfGVufDB8MHx8fDE3ODI4OTI0NzB8MA&ixlib=rb-4.1.0&q=80&w=600" alt="Hearty roasted root vegetable medley with fresh herbs" class="menu-card__image" loading="lazy">
+                        <h3 class="menu-card__title">Root Vegetable Gratin</h3>
+                        <p class="menu-card__description">Layers of sweet potatoes, parsnips, and carrots baked in a creamy herb sauce with a crispy topping.</p>
+                        <span class="menu-card__price">$18</span>
+                    </article>
+                    <article class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1771398388231-0852d599b648?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxjcmFmdCUyMGNvY2t0YWlsJTIwYmFyfGVufDB8MHx8fDE3ODI4OTI0NzF8MA&ixlib=rb-4.1.0&q=80&w=600" alt="Elegant gin cocktail with botanical garnishes" class="menu-card__image" loading="lazy">
+                        <h3 class="menu-card__title">Botanical Gin Fizz</h3>
+                        <p class="menu-card__description">A refreshing blend of premium gin, fresh citrus, elderflower, and a hint of sparkling prosecco.</p>
+                        <span class="menu-card__price">$15</span>
+                    </article>
+                </div>
+                <a href="#contact" class="button button--primary menu__cta">Make a Reservation</a>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery section reveal-section">
+            <div class="container gallery__container">
+                <h2 class="gallery__title">Moments from Our Table</h2>
+                <p class="gallery__subtitle">A visual feast of our culinary artistry and inviting ambiance.</p>
+                <div class="gallery__grid">
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1667388969250-1c7220bf3f37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyZXN0YXVyYW50JTIwaW50ZXJpb3IlMjB3YXJtJTIwbGlnaHRpbmd8ZW58MHwwfHx8MTc4Mjg5MjQ3Mnww&ixlib=rb-4.1.0&q=80&w=800" alt="Warmly lit restaurant dining area with elegant table settings" loading="lazy">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1707932828269-cd6fdb8287b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHx3b29kJTIwZmlyZWQlMjBncmlsbCUyMHJlc3RhdXJhbnQlMjBpbnRlcmlvciUyMG5pZ2h0fGVufDB8MHx8fDE3ODI4OTI0Njd8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Stylish restaurant interior with modern lighting and comfortable seating" loading="lazy">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1542365887-1149961dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxncmlsbGVkJTIwc3RlYWslMjBkaXNofGVufDB8MHx8fDE3ODI4OTI0Njl8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Gourmet grilled steak dish with fresh herbs and a side of sauce" loading="lazy">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1692313532975-513a383c48f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxvcGVuJTIwZmxhbWUlMjBjb29raW5nfGVufDB8MHx8fDE3ODI4OTI0NzN8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Close-up of a chef cooking over an open flame grill" loading="lazy">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1778790376629-af2604f82ef0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyb2FzdGVkJTIwdmVnZXRhYmxlcyUyMHBsYXRlfGVufDB8MHx8fDE3ODI4OTI0NzB8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Beautifully plated roasted vegetables with a garnish" loading="lazy">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1777791374298-ff3c4a1bf784?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxjcmFmdCUyMGNvY2t0YWlsJTIwYmFyfGVufDB8MHx8fDE3ODI4OTI0NzF8MA&ixlib=rb-4.1.0&q=80&w=800" alt="A sophisticated craft cocktail with a citrus garnish" loading="lazy">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1581970696275-253e75ecf269?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxydXN0aWMlMjBkaW5pbmclMjB0YWJsZSUyMHNldHxlbnwwfDB8fHwxNzgyODkyNDc0fDA&ixlib=rb-4.1.0&q=80&w=800" alt="Rustic dining table setting with elegant tableware and candles" loading="lazy">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1640583342012-4622f31b650d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxjaGVmJTIwcGxhdGluZyUyMGRpc2glMjBvcGVuJTIwa2l0Y2hlbnxlbnwwfDB8fHwxNzgyODkyNDY4fDA&ixlib=rb-4.1.0&q=80&w=800" alt="Chef's hands meticulously plating a dish in an open kitchen" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials section reveal-section">
+            <div class="container testimonials__container">
+                <h2 class="testimonials__title">What Our Guests Say</h2>
+                <p class="testimonials__subtitle">Hear from those who have savored the Ember & Oak experience.</p>
+                <div class="testimonials__grid">
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-card__quote">"Ember & Oak is a true culinary gem! The wood-fired ribeye was absolutely perfect, and the ambiance was warm and inviting. We'll definitely be back."</p>
+                        <cite class="testimonial-card__author">– Sarah M.</cite>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-card__quote">"Every dish felt crafted with passion. The smoked old fashioned was a revelation, and the service was impeccable. A must-visit for food lovers."</p>
+                        <cite class="testimonial-card__author">– David L.</cite>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-card__quote">"From the moment we walked in, we felt at home. The roasted vegetables were surprisingly delicious, and the staff made our anniversary dinner extra special."</p>
+                        <cite class="testimonial-card__author">– Emily R.</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section reveal-section">
+            <div class="container contact__container">
+                <div class="contact__form-wrapper">
+                    <h2 class="contact__title">Reserve Your Table</h2>
+                    <p class="contact__subtitle">Book your unforgettable dining experience with us.</p>
+                    <form id="reservationForm" class="contact__form" action="/api/contact" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="john.doe@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(123) 456-7890" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" id="date" name="date" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time" class="form-label">Time</label>
+                            <input type="time" id="time" name="time" class="form-input" value="19:00" min="17:00" max="22:00" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests" class="form-label">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" class="form-input" value="2" min="1" max="10" required>
+                        </div>
+                        <div class="form-group form-group--full-width">
+                            <label for="message" class="form-label">Special Requests (optional)</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Allergies, special occasion, preferred seating..."></textarea>
+                        </div>
+                        <button type="submit" class="button button--primary form__submit-button">Confirm Reservation</button>
+                        <p id="formStatus" class="form-status" aria-live="polite"></p>
+                    </form>
+                </div>
+                <div class="contact__info-wrapper">
+                    <h3 class="contact__info-title">Find Us</h3>
+                    <address class="contact__address">
+                        <p><strong>Ember & Oak</strong></p>
+                        <p>123 Flame Street</p>
+                        <p>Gastronomy City, GC 54321</p>
+                        <p>United Plates</p>
+                    </address>
+                    <p class="contact__detail"><strong>Phone:</strong> <a href="tel:+15551234567">(555) 123-4567</a></p>
+                    <p class="contact__detail"><strong>Email:</strong> <a href="mailto:reservations@emberandoak.com">reservations@emberandoak.com</a></p>
+                    <p class="contact__detail"><strong>Hours:</strong></p>
+                    <ul class="contact__hours-list">
+                        <li>Tuesday - Thursday: 5:00 PM - 10:00 PM</li>
+                        <li>Friday - Saturday: 5:00 PM - 11:00 PM</li>
+                        <li>Sunday: 4:00 PM - 9:00 PM</li>
+                        <li>Monday: Closed</li>
+                    </ul>
+                    <div class="contact__map-placeholder" aria-label="Location map placeholder">
+                        <!-- Placeholder for an embedded map -->
+                        <p>Map coming soon!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__column footer__column--brand">
+                <a href="#home" class="footer__logo">Ember & Oak</a>
+                <p class="footer__tagline">Where every meal is a celebration.</p>
+                <div class="footer__social-links">
+                    <a href="#" class="social-icon" aria-label="Ember & Oak on Facebook">FB</a>
+                    <a href="#" class="social-icon" aria-label="Ember & Oak on Instagram">IG</a>
+                    <a href="#" class="social-icon" aria-label="Ember & Oak on X (formerly Twitter)">X</a>
+                </div>
+            </div>
+            <nav class="footer__column footer__column--links" aria-label="Footer navigation">
+                <h3 class="footer__heading">Quick Links</h3>
+                <ul class="footer__list">
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#about" class="footer__link">About Us</a></li>
+                    <li><a href="#menu" class="footer__link">Menu</a></li>
+                    <li><a href="#gallery" class="footer__link">Gallery</a></li>
+                    <li><a href="#testimonials" class="footer__link">Testimonials</a></li>
+                    <li><a href="#contact" class="footer__link">Reservations</a></li>
+                </ul>
+            </nav>
+            <div class="footer__column footer__column--contact">
+                <h3 class="footer__heading">Contact Us</h3>
+                <p class="footer__contact-info">123 Flame Street, Gastronomy City</p>
+                <p class="footer__contact-info">Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+                <p class="footer__contact-info">Email: <a href="mailto:info@emberandoak.com">info@emberandoak.com</a></p>
+            </div>
+            <div class="footer__column footer__column--hours">
+                <h3 class="footer__heading">Operating Hours</h3>
+                <ul class="footer__list">
+                    <li>Tue - Thu: 5:00 PM - 10:00 PM</li>
+                    <li>Fri - Sat: 5:00 PM - 11:00 PM</li>
+                    <li>Sun: 4:00 PM - 9:00 PM</li>
+                    <li>Mon: Closed</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom-bar">
+            <div class="container footer__bottom-container">
+                <p class="footer__copyright">&copy; 2024 Ember & Oak. All rights reserved.</p>
+                <div class="footer__legal-links">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                    <a href="#" class="footer__link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

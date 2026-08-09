@@ -1,0 +1,267 @@
+<!--
+Business: MediCare Hospital
+Type: hospital
+Palette: --color-primary: #B25F4C; --color-secondary: #EADDCD; --color-dark: #2C3E50; --color-light: #F8F8F8; --color-white: #FFFFFF; --color-accent: #E74C3C;
+Fonts: 'Montserrat', sans-serif (headings); 'Inter', sans-serif (body)
+Sections: ['hero', 'departments', 'specialist-care', 'splash', 'contact']
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Hospital - Exceptional Care for a Healthier Tomorrow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
+</head>
+<body>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgIGhlaWdodD0iMzIiICB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imx1Y2lkZSBsdWNpZGUtYmFuZGFnZSI+PHBhdGggTTUgMTcgSDEwIEE1IDUgMCAwIDAgMTUgMTIgVjcgSDE5Ii8+PHBhdGggTTggMTcgSDUuNUM0LjY3IDExLjY2IDcuNSAxMCAxMiA3LjVDMTYuNSAxMCAxOS4zMyAxMS42NiAxOSA1LjUiLz48cGF0aCBkPSJNMTggMTIgSDIwIi8+PHBhdGggZD0iTTcgMTIgSDkiLz48cGF0aCBkPSJNMTEgMTUuNUgxMyIvPjxwYXRoIGQ9Ik0xMiAxMyBWMTUiLz48L3N2Zz4=" alt="Loading icon" class="splash-icon">
+            <p>Loading MediCare Hospital...</p>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="main-header">
+        <div class="container navbar-container">
+            <a href="#hero" class="logo">MediCare Hospital</a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#specialist-care">Specialist Care</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Book Appointment</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1709497197725-2e97c76b31d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3NwaXRhbCUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3IlMjBnbGFzcyUyMGZhY2FkZXxlbnwwfDB8fHwxNzgyOTgxNzA0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Modern hospital building exterior with glass facade" class="hero-background-image">
+            <div class="container hero-content">
+                <p class="eyebrow">Your Health, Our Priority</p>
+                <h1>Exceptional Care for a Healthier Tomorrow</h1>
+                <p class="subheadline">At MediCare Hospital, we combine advanced medical technology with compassionate expertise to deliver comprehensive healthcare services tailored to your needs.</p>
+                <div class="hero-features">
+                    <div class="feature-bar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-alarm-plus"><path d="M12 2v3"/><path d="M6.6 18.9L4 21"/><path d="M17.4 18.9L20 21"/><path d="M21.7 11.7l-2.7-.3"/><path d="M4.3 11.7l2.7-.3"/><path d="M12 6a8 8 0 1 0 0 16 8 8 0 0 0 0-16Z"/><path d="M12 10v4"/><path d="M10 12h4"/></svg>
+                        <h3>24/7 Emergency Care</h3>
+                        <p>Immediate medical attention when you need it most, around the clock.</p>
+                    </div>
+                    <div class="feature-bar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+                        <h3>Board-Certified Specialists</h3>
+                        <p>Access to leading experts across all medical disciplines for superior care.</p>
+                    </div>
+                    <div class="feature-bar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building-2"><path d="M6 22V7H4v15"/><path d="M18 22V8h2v14"/><path d="M12 22V4h2v18"/><path d="M4 12V2h16v10"/></svg>
+                        <h3>State-of-the-Art Facilities</h3>
+                        <p>Equipped with the latest technology for accurate diagnostics and effective treatments.</p>
+                    </div>
+                </div>
+                <div class="hero-card masked-card">
+                    <div class="card-inner">
+                        <h2>Book Your Appointment Today</h2>
+                        <p>Schedule a consultation with our experienced medical team for personalized health solutions.</p>
+                        <a href="#contact" class="btn btn-secondary">Make an Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments Section -->
+        <section id="departments" class="departments-section section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Our Specialized Departments</h2>
+                <p class="section-description">Providing comprehensive care across a wide range of medical specialties with dedication and expertise.</p>
+                <div class="departments-grid">
+                    <div class="department-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1758691462878-6edc3d3da1be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxkb2N0b3IlMjBleGFtaW5pbmclMjBwYXRpZW50JTIwaW4lMjBjbGluaWMlMjByb29tfGVufDB8MHx8fDE3ODI5ODE3MDV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Doctor examining a patient in a clinic room" loading="lazy">
+                        <h3>Cardiology</h3>
+                        <p>Expert care for heart health, from diagnostics to advanced treatments.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="department-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1758691463080-30a990ef61bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxkb2N0b3IlMjBleGFtaW5pbmclMjBwYXRpZW50JTIwaW4lMjBjbGluaWMlMjByb29tfGVufDB8MHx8fDE3ODI5ODE3MDV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Doctor consulting with a young patient" loading="lazy">
+                        <h3>Pediatrics</h3>
+                        <p>Dedicated medical services for infants, children, and adolescents.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="department-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1691139601099-932c01ec198b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxudXJzZSUyMGNoZWNraW5nJTIwcGF0aWVudCUyMHZpdGFscyUyMG1vbml0b3J8ZW58MHwwfHx8MTc4Mjk4MTcwOXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Nurse checking patient vitals on a monitor" loading="lazy">
+                        <h3>Orthopedics</h3>
+                        <p>Specialized treatment for musculoskeletal conditions and injuries.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="department-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1631815590016-ebce183022ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxudXJzZSUyMGNoZWNraW5nJTIwcGF0aWVudCUyMHZpdGFscyUyMG1vbml0b3J8ZW58MHwwfHx8MTc4Mjk4MTcwOXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Nurse monitoring a patient in a hospital room" loading="lazy">
+                        <h3>Neurology</h3>
+                        <p>Advanced care for disorders of the brain, spinal cord, and nervous system.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="department-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1758691462284-9eeec33fb0e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxkb2N0b3IlMjBleGFtaW5pbmclMjBwYXRpZW50JTIwaW4lMjBjbGluaWMlMjByb29tfGVufDB8MHx8fDE3ODI5ODE3MDV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Doctor consulting with a patient about health" loading="lazy">
+                        <h3>Oncology</h3>
+                        <p>Comprehensive cancer treatment and supportive care services.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="department-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1758691462858-f1286e5daf40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxkb2N0b3IlMjBleGFtaW5pbmclMjBwYXRpZW50JTIwaW4lMjBjbGluaWMlMjByb29tfGVufDB8MHx8fDE3ODI5ODE3MDV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Medical professional in a clinic setting" loading="lazy">
+                        <h3>Emergency</h3>
+                        <p>24/7 rapid response and critical care for all medical emergencies.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialist Care Section -->
+        <section id="specialist-care" class="specialist-care-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Advanced Specialist Care</h2>
+                <p class="section-description">Our expert teams provide specialized treatments and compassionate support for complex health needs.</p>
+                <div class="specialist-care-grid">
+                    <div class="care-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxzdXJnZW9uJTIwdGVhbSUyMG9wZXJhdGluZyUyMHJvb218ZW58MHwwfHx8MTc4Mjk4MTcwN3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Surgeons performing an operation in a sterile operating room" loading="lazy">
+                        <h3>Surgery & Anesthesia</h3>
+                        <p>State-of-the-art surgical procedures with advanced anesthesia care.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="care-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1683272468278-3ba6633c15a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxzbWlsaW5nJTIwZWxkZXJseSUyMHBhdGllbnQlMjB3aXRoJTIwZG9jdG9yJTIwY29uc3VsdGF0aW9ufGVufDB8MHx8fDE3ODI5ODE3MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Smiling elderly patient in consultation with a doctor" loading="lazy">
+                        <h3>Geriatric Care</h3>
+                        <p>Comprehensive health services tailored for the unique needs of seniors.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="care-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1579154491915-611e891d3a5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxzdXJnZW9uJTIwdGVhbSUyMG9wZXJhdGluZyUyMHJvb218ZW58MHwwfHx8MTc4Mjk4MTcwN3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Medical team in an operating room during surgery" loading="lazy">
+                        <h3>Intensive Care Unit</h3>
+                        <p>Critical care and continuous monitoring for severely ill patients.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="care-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1606587238918-40226ec46b3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxzbWlsaW5nJTIwZWxkZXJseSUyMHBhdGllbnQlMjB3aXRoJTIwZG9jdG9yJTIwY29uc3VsdGF0aW9ufGVufDB8MHx8fDE3ODI5ODE3MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Doctor talking to an elderly patient with a smile" loading="lazy">
+                        <h3>Diagnostic Imaging</h3>
+                        <p>Advanced imaging services for accurate diagnosis and treatment planning.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="care-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1725693485717-dbf8eac577c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxzdXJnZW9uJTIwdGVhbSUyMG9wZXJhdGluZyUyMHJvb218ZW58MHwwfHx8MTc4Mjk4MTcwN3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="A surgeon in the middle of a procedure" loading="lazy">
+                        <h3>Rehabilitation Services</h3>
+                        <p>Restoring function and improving quality of life through tailored therapy.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="care-card reveal-item">
+                        <img src="https://images.unsplash.com/photo-1765896387398-1e1ae8d2eb85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxzbWlsaW5nJTIwZWxkZXJseSUyMHBhdGllbnQlMjB3aXRoJTIwZG9jdG9yJTIwY29uc3VsdGF0aW9ufGVufDB8MHx8fDE3ODI5ODE3MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Patient in consultation with a doctor" loading="lazy">
+                        <h3>Mental Health Support</h3>
+                        <p>Compassionate care for mental well-being and emotional health.</p>
+                        <a href="#" class="read-more-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding bg-dark">
+            <div class="container">
+                <h2 class="section-title text-white">Get in Touch with MediCare</h2>
+                <p class="section-description text-white">We're here to answer your questions and help you schedule your visit.</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Our Location</h3>
+                        <p>123 Healthway Blvd, Medical City, HC 12345</p>
+                        <h3>Contact Details</h3>
+                        <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+                        <p>Email: <a href="mailto:info@medicarehospital.com">info@medicarehospital.com</a></p>
+                        <h3>Visiting Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
+                        <p>Weekends: 9:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number (Optional)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="How can we assist you today?" required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submitButton">
+                                Send Message
+                                <span class="loading-spinner"></span>
+                            </button>
+                            <p id="formStatus" class="form-status"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-info">
+                <h3>MediCare Hospital</h3>
+                <p>Committed to providing exceptional healthcare services with compassion and integrity.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17-17 17a18.9 18.9 0 0 1-5-1.2c.7 1.1 1.7 2 2.8 2.7.7.7 1.5 1.4 2.4 1.9 1.1.8 2.3 1.5 3.6 2.1 1.3.6 2.7 1.1 4.1 1.3 1.5.2 2.9.3 4.4.1 1.5-.2 2.9-.8 4.3-1.6 1.3-.8 2.6-1.9 3.8-3.3 1.2-1.4 2.3-3.1 3.2-5 .9-1.9 1.6-4 1.9-6.2.3-2.3.2-4.6-.2-6.9-.5-2.2-1.3-4.4-2.5-6.4C20.3 6.8 19 5.4 17.5 4.3 16.1 3.2 14.5 2.3 12.8 1.8 11.2 1.3 9.5 1.1 7.8 1.3 6.2 1.5 4.6 2.1 3 3 1.4 3.9.7 5.2.2 6.7c-.4 1.5-.5 3.1-.4 4.7.1 1.6.5 3.1 1.2 4.6.8 1.4 1.8 2.7 3.1 3.8 1.3 1.1 2.8 2 4.4 2.6 1.6.6 3.4.9 5.1.8 1.7-.1 3.4-.6 4.9-1.6 1.5-.9 2.9-2.2 4-3.8 1.1-1.6 2-3.4 2.6-5.4.6-2 .9-4.1.7-6.2-.2-2.1-.8-4.1-1.9-6z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-col quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#specialist-care">Specialist Care</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-details">
+                <h3>Contact</h3>
+                <p>123 Healthway Blvd</p>
+                <p>Medical City, HC 12345</p>
+                <p>Email: <a href="mailto:info@medicarehospital.com">info@medicarehospital.com</a></p>
+                <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

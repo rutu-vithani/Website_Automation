@@ -1,0 +1,302 @@
+<!--
+Business: Luxe Estates
+Type: Real Estate Agency
+Palette: Primary Navy-Charcoal (#1A202C), Accent Warm Gold (#B8926A), Light Cream (#F5F5DC), Dark Text (#333333), Light Background (#F8F8F8)
+Fonts: Headings: Playfair Display, Body: Inter
+Sections: HeroSection, PropertyMarqueeSection, AboutSection, ServicesSection, ListingsSection
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Estates | Discover Your Next Masterpiece</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23B8926A' d='M12 2L2 7v10l10 5 10-5V7L12 2zm0 1.96l8 4V16l-8 4-8-4V5.96l8-4zM12 8a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+    <header class="header" id="home">
+        <nav class="navbar container">
+            <a href="#home" class="navbar__logo">Luxe Estates</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="nav-toggle__icon"></span>
+                <span class="nav-toggle__icon"></span>
+                <span class="nav-toggle__icon"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#listings" class="nav-link">Listings</a></li>
+                <li><a href="#contact" class="nav-link nav-link--button">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero__background">
+                <img src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjByZWFsJTIwZXN0YXRlfGVufDB8MHx8fDE3ODI5NjgxODd8MA&ixlib=rb-4.1.0&q=80&w=1920" alt="Luxurious modern home exterior with swimming pool" class="hero__image" loading="eager">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__content container reveal-on-scroll" data-animation="fade-up">
+                <p class="hero__eyebrow">Your Vision, Our Expertise</p>
+                <h1 class="hero__headline">Discover Your Next Masterpiece.</h1>
+                <p class="hero__subheadline">Luxe Estates specializes in exclusive properties, offering unparalleled service for discerning clients seeking extraordinary homes and investment opportunities.</p>
+                <div class="hero__actions">
+                    <a href="#listings" class="button button--primary">View Our Listings</a>
+                    <a href="#contact" class="button button--secondary">Schedule a Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Property Marquee Section -->
+        <section id="marquee" class="marquee-section">
+            <div class="marquee-section__title container reveal-on-scroll" data-animation="fade-up">
+                <h2 class="h2">A Glimpse Into Luxury Living</h2>
+            </div>
+            <div class="marquee-container reveal-on-scroll" data-animation="fade-in">
+                <div class="marquee-track">
+                    <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjByZWFsJTIwZXN0YXRlfGVufDB8MHx8fDE3ODI5NjgxODd8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Spacious modern living room with large windows" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjByZWFsJTIwZXN0YXRlfGVufDB8MHx8fDE3ODI5NjgxODd8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Elegant dining room with chandelier and large table" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjByZWFsJTIwZXN0YXRlfGVufDB8MHx8fDE3ODI5NjgxODd8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Modern kitchen with island and high-end appliances" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1756435292384-1bf32eff7baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHw0fHxoaWdoLWVuZCUyMGhvbWVzfGVufDB8MHx8fDE3ODI5NjgxODl8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Luxurious bedroom with large bed and city view" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjByZWFsJTIwZXN0YXRlfGVufDB8MHx8fDE3ODI5NjgxODd8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Spacious modern living room with large windows" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjByZWFsJTIwZXN0YXRlfGVufDB8MHx8fDE3ODI5NjgxODd8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Elegant dining room with chandelier and large table" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjByZWFsJTIwZXN0YXRlfGVufDB8MHx8fDE3ODI5NjgxODd8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Modern kitchen with island and high-end appliances" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1756435292384-1bf32eff7baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHw0fHxoaWdoLWVuZCUyMGhvbWVzfGVufDB8MHx8fDE3ODI5NjgxODl8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Luxurious bedroom with large bed and city view" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section container">
+            <div class="about-section__content reveal-on-scroll" data-animation="fade-up">
+                <h2 class="h2">Experience Unparalleled Expertise.</h2>
+                <p>At Luxe Estates, we redefine luxury real estate. Our legacy is built on a foundation of trust, discretion, and an unwavering commitment to excellence. We understand that acquiring or selling a luxury property is more than a transaction; it's a pivotal life decision that requires a partner with deep market insight and a personalized approach.</p>
+                <p>Our team of seasoned professionals brings decades of collective experience, offering bespoke solutions that cater to the unique aspirations of each client. From exclusive off-market opportunities to strategic negotiation and comprehensive advisory, we ensure a seamless and rewarding journey. We don't just find properties; we unlock lifestyles.</p>
+                <a href="#contact" class="button button--primary">Learn More</a>
+            </div>
+            <div class="about-section__images reveal-on-scroll" data-animation="fade-in">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyZWFsJTIwZXN0YXRlJTIwYWdlbmN5fGVufDB8MHx8fDE3ODI5NzY2NzN8MA&ixlib=rb-4.1.0&q=80&w=600" alt="Elegant real estate agent discussing property with clients" class="about-image about-image--left" loading="lazy">
+                <img src="https://images.unsplash.com/flagged/photo-1564767609342-620cb19b2357?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxyZWFsJTIwZXN0YXRlJTIwYWdlbmN5fGVufDB8MHx8fDE3ODI5NzY2NzN8MA&ixlib=rb-4.1.0&q=80&w=600" alt="Modern office interior with architectural details" class="about-image about-image--right" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="services-section__header reveal-on-scroll" data-animation="fade-up">
+                    <p class="eyebrow">Our Commitment to You</p>
+                    <h2 class="h2">Tailored Services for Discerning Clients.</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal-on-scroll" data-animation="fade-up" data-delay="100">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-banknote"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+                        </div>
+                        <h3 class="h3">Exclusive Property Acquisition</h3>
+                        <p>Access to a curated portfolio of prime properties, including off-market gems not available to the public. We meticulously match your desires with the perfect estate.</p>
+                    </div>
+                    <div class="service-card reveal-on-scroll" data-animation="fade-up" data-delay="200">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2 2 0 0 0 2.828 0l7.172-7.172a2 2 0 0 0 0-2.828l-8.704-8.704z"/><path d="M9 9h.01"/></svg>
+                        </div>
+                        <h3 class="h3">Discreet Listing & Sale</h3>
+                        <p>For sellers, we provide a confidential and strategic approach to marketing your property, reaching qualified buyers globally through our exclusive network.</p>
+                    </div>
+                    <div class="service-card reveal-on-scroll" data-animation="fade-up" data-delay="300">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark"><line x1="22" x2="2" y1="9" y2="9"/><path d="M12 22V9"/><path d="M5 22V9"/><path d="M19 22V9"/><path d="M18 5V2H6v3"/><path d="M3 22h18"/></svg>
+                        </div>
+                        <h3 class="h3">Strategic Investment Guidance</h3>
+                        <p>Leverage our profound market intelligence to identify high-yield investment properties and portfolios that align with your financial objectives.</p>
+                    </div>
+                    <div class="service-card reveal-on-scroll" data-animation="fade-up" data-delay="400">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        </div>
+                        <h3 class="h3">Comprehensive Property Management</h3>
+                        <p>From maintenance to tenant relations, our full-service management ensures your investment is meticulously cared for, preserving its value and your peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Listings Section -->
+        <section id="listings" class="listings-section container">
+            <div class="listings-header reveal-on-scroll" data-animation="fade-up">
+                <p class="eyebrow">Curated for Distinction</p>
+                <h2 class="h2">Explore Our Exclusive Portfolio.</h2>
+                <p>A selection of the finest properties, each embodying luxury, sophistication, and unique charm. Find your extraordinary residence.</p>
+            </div>
+            <div class="listings-grid">
+                <div class="listing-card reveal-on-scroll" data-animation="fade-up" data-delay="100">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxsdXh1cnklMjBsaXZpbmd8ZW58MHwwfHx8MTc4Mjk3NjY3MXww&ixlib=rb-4.1.0&q=80&w=800" alt="Modern luxury house exterior with lush garden" loading="lazy">
+                    <div class="listing-card__content">
+                        <h3 class="listing-card__title">The Serenity Estate</h3>
+                        <p class="listing-card__address">123 Ocean View Dr, Malibu, CA</p>
+                        <p class="listing-card__price">$18,500,000</p>
+                        <div class="listing-card__details">
+                            <span>4 Beds</span>
+                            <span>5 Baths</span>
+                            <span>6,200 SqFt</span>
+                        </div>
+                        <a href="#" class="button button--details">View Details</a>
+                    </div>
+                </div>
+                <div class="listing-card reveal-on-scroll" data-animation="fade-up" data-delay="200">
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxsdXh1cnklMjBsaXZpbmd8ZW58MHwwfHx8MTc4Mjk3NjY3MXww&ixlib=rb-4.1.0&q=80&w=800" alt="Spacious minimalist living room with city view" loading="lazy">
+                    <div class="listing-card__content">
+                        <h3 class="listing-card__title">Downtown Penthouse</h3>
+                        <p class="listing-card__address">456 Cityscape Blvd, Miami, FL</p>
+                        <p class="listing-card__price">$9,200,000</p>
+                        <div class="listing-card__details">
+                            <span>3 Beds</span>
+                            <span>4 Baths</span>
+                            <span>4,800 SqFt</span>
+                        </div>
+                        <a href="#" class="button button--details">View Details</a>
+                    </div>
+                </div>
+                <div class="listing-card reveal-on-scroll" data-animation="fade-up" data-delay="300">
+                    <img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBsaXZpbmd8ZW58MHwwfHx8MTc4Mjk3NjY3MXww&ixlib=rb-4.1.0&q=80&w=800" alt="Modern home exterior with large glass windows and pool" loading="lazy">
+                    <div class="listing-card__content">
+                        <h3 class="listing-card__title">The Modern Sanctuary</h3>
+                        <p class="listing-card__address">789 Lakefront Way, Austin, TX</p>
+                        <p class="listing-card__price">$12,750,000</p>
+                        <div class="listing-card__details">
+                            <span>5 Beds</span>
+                            <span>6 Baths</span>
+                            <span>7,500 SqFt</span>
+                        </div>
+                        <a href="#" class="button button--details">View Details</a>
+                    </div>
+                </div>
+                <div class="listing-card reveal-on-scroll" data-animation="fade-up" data-delay="400">
+                    <img src="https://images.unsplash.com/photo-1722379528456-f26976ba84cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBsaXZpbmd8ZW58MHwwfHx8MTc4Mjk3NjY3MXww&ixlib=rb-4.1.0&q=80&w=800" alt="Spacious kitchen with marble island and high ceilings" loading="lazy">
+                    <div class="listing-card__content">
+                        <h3 class="listing-card__title">Hillside Haven</h3>
+                        <p class="listing-card__address">101 Canyon Ridge Rd, Aspen, CO</p>
+                        <p class="listing-card__price">$24,000,000</p>
+                        <div class="listing-card__details">
+                            <span>6 Beds</span>
+                            <span>7 Baths</span>
+                            <span>9,000 SqFt</span>
+                        </div>
+                        <a href="#" class="button button--details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="listings-cta reveal-on-scroll" data-animation="fade-up">
+                <h3 class="h3">Ready to Find Your Dream Home?</h3>
+                <p>Our dedicated team is here to guide you every step of the way.</p>
+                <a href="#contact" class="button button--primary">Contact Us Today</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info reveal-on-scroll" data-animation="fade-up">
+                        <p class="eyebrow">Get In Touch</p>
+                        <h2 class="h2">Let's Discuss Your Real Estate Goals.</h2>
+                        <p>Whether you're looking to buy, sell, or invest, our experts are ready to provide unparalleled service and insights.</p>
+                        <address class="contact-details">
+                            <p><strong>Luxe Estates Headquarters</strong><br>
+                                123 Grandeur Avenue, Suite 500<br>
+                                Metropolis, NY 10001</p>
+                            <p>Phone: <a href="tel:+12125550123">(212) 555-0123</a></p>
+                            <p>Email: <a href="mailto:info@luxeestates.com">info@luxeestates.com</a></p>
+                        </address>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                            <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                            <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper reveal-on-scroll" data-animation="fade-up" data-delay="100">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone (Optional)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your property needs..." required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+                            <button type="submit" class="button button--primary contact-form__submit">Send Message</button>
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-col--brand">
+                <a href="#home" class="footer__logo">Luxe Estates</a>
+                <p class="footer__tagline">Unlocking extraordinary properties and lifestyles.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#listings">View Listings</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Info</h4>
+                <ul class="footer-links">
+                    <li>123 Grandeur Ave, Suite 500</li>
+                    <li>Metropolis, NY 10001</li>
+                    <li><a href="tel:+12125550123">(212) 555-0123</a></li>
+                    <li><a href="mailto:info@luxeestates.com">info@luxeestates.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p>Stay updated with our latest exclusive listings.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" aria-label="Newsletter email input" required>
+                    <button type="submit" class="button button--primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxe Estates. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

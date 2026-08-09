@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #f2f2f2;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 30%;
+    margin: 1em;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials blockquote {
+    background-color: #f2f2f2;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.testimonials cite {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.contact input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #3e8e41;
+}

@@ -1,0 +1,301 @@
+{
+  "editable": {
+    "text-1": {
+      "label": "<h1> Your Journey to a Radiant, Healthy Sm...",
+      "type": "text",
+      "value": "Your Journey to a Radiant, Healthy Smile Starts Here."
+    },
+    "text-2": {
+      "label": "<p> At Dental Health, we blend state-of-t...",
+      "type": "text",
+      "value": "At Dental Health, we blend state-of-the-art technology with compassionate expertise to deliver a truly luxurious dental experience."
+    },
+    "text-3": {
+      "label": "<h2> Redefining Dental Excellence",
+      "type": "text",
+      "value": "Redefining Dental Excellence"
+    },
+    "text-4": {
+      "label": "<p> At Dental Health, we believe that exc...",
+      "type": "text",
+      "value": "At Dental Health, we believe that exceptional dental care goes beyond just treatments. It's about creating an atmosphere of comfort, trust, and personalized attention. Our state-of-the-art facility is designed to offer a serene and private experience, ensuring every visit is as pleasant as it is effective."
+    },
+    "text-5": {
+      "label": "<p> Our team of highly skilled profession...",
+      "type": "text",
+      "value": "Our team of highly skilled professionals is dedicated to continuous learning and utilizing the latest advancements in dentistry. We focus on preventative care, precise diagnostics, and crafting bespoke treatment plans that align with your unique health and aesthetic goals."
+    },
+    "text-6": {
+      "label": "<h2> Comprehensive Services for Your Smile",
+      "type": "text",
+      "value": "Comprehensive Services for Your Smile"
+    },
+    "text-7": {
+      "label": "<p> From routine preventative care to adv...",
+      "type": "text",
+      "value": "From routine preventative care to advanced cosmetic and restorative procedures, we offer a full spectrum of dental solutions tailored to your needs."
+    },
+    "text-8": {
+      "label": "<h3> Cosmetic Dentistry",
+      "type": "text",
+      "value": "Cosmetic Dentistry"
+    },
+    "text-9": {
+      "label": "<p> Enhance your smile with our aesthetic...",
+      "type": "text",
+      "value": "Enhance your smile with our aesthetic treatments including porcelain veneers, teeth whitening, and smile makeovers designed for perfection."
+    },
+    "text-10": {
+      "label": "<h3> Dental Implants",
+      "type": "text",
+      "value": "Dental Implants"
+    },
+    "text-11": {
+      "label": "<p> Restore missing teeth with durable an...",
+      "type": "text",
+      "value": "Restore missing teeth with durable and natural-looking dental implants, offering a permanent solution for a complete smile."
+    },
+    "text-12": {
+      "label": "<h3> General Dentistry",
+      "type": "text",
+      "value": "General Dentistry"
+    },
+    "text-13": {
+      "label": "<p> Maintain optimal oral health with our...",
+      "type": "text",
+      "value": "Maintain optimal oral health with our routine check-ups, cleanings, fillings, and preventative care tailored for your family."
+    },
+    "text-14": {
+      "label": "<h3> Orthodontics",
+      "type": "text",
+      "value": "Orthodontics"
+    },
+    "text-15": {
+      "label": "<p> Achieve perfectly aligned teeth with ...",
+      "type": "text",
+      "value": "Achieve perfectly aligned teeth with our advanced orthodontic solutions, including clear aligners and traditional braces."
+    },
+    "text-16": {
+      "label": "<h2> A Glimpse into Beautiful Smiles",
+      "type": "text",
+      "value": "A Glimpse into Beautiful Smiles"
+    },
+    "text-17": {
+      "label": "<p> Witness the artistry and precision of...",
+      "type": "text",
+      "value": "Witness the artistry and precision of our work through our patient success stories and clinic environment."
+    },
+    "text-18": {
+      "label": "<h2> What Our Valued Patients Say",
+      "type": "text",
+      "value": "What Our Valued Patients Say"
+    },
+    "text-19": {
+      "label": "<p> Hear firsthand about the exceptional ...",
+      "type": "text",
+      "value": "Hear firsthand about the exceptional care and transformative results experienced at Dental Health."
+    },
+    "text-20": {
+      "label": "<p> \"From the moment I stepped in, I felt...",
+      "type": "text",
+      "value": "\"From the moment I stepped in, I felt completely at ease. The staff are incredibly professional and kind, and my results are beyond what I imagined. Truly a five-star experience!\""
+    },
+    "text-21": {
+      "label": "<p> \"Dental Health has changed my percept...",
+      "type": "text",
+      "value": "\"Dental Health has changed my perception of dental visits. The clinic is beautiful, the technology is impressive, and the care is genuinely outstanding. Highly recommend!\""
+    },
+    "text-22": {
+      "label": "<p> \"I appreciate the thorough explanatio...",
+      "type": "text",
+      "value": "\"I appreciate the thorough explanations and the gentle approach. My family and I have found our permanent dental home. Thank you for making dental care a positive experience.\""
+    },
+    "text-23": {
+      "label": "<h2> Our Care Plans & Pricing",
+      "type": "text",
+      "value": "Our Care Plans & Pricing"
+    },
+    "text-24": {
+      "label": "<p> Investing in your oral health is inve...",
+      "type": "text",
+      "value": "Investing in your oral health is investing in your overall well-being. Explore our thoughtfully designed plans."
+    },
+    "text-25": {
+      "label": "<h3> Preventative Package",
+      "type": "text",
+      "value": "Preventative Package"
+    },
+    "text-26": {
+      "label": "<p> $199/year",
+      "type": "text",
+      "value": "$199/year"
+    },
+    "text-27": {
+      "label": "<h3> Premium Smile Package",
+      "type": "text",
+      "value": "Premium Smile Package"
+    },
+    "text-28": {
+      "label": "<p> $349/year",
+      "type": "text",
+      "value": "$349/year"
+    },
+    "text-29": {
+      "label": "<h3> Comprehensive Wellness",
+      "type": "text",
+      "value": "Comprehensive Wellness"
+    },
+    "text-30": {
+      "label": "<p> Custom",
+      "type": "text",
+      "value": "Custom"
+    },
+    "text-31": {
+      "label": "<h2> Frequently Asked Questions",
+      "type": "text",
+      "value": "Frequently Asked Questions"
+    },
+    "text-32": {
+      "label": "<p> Find quick answers to common inquirie...",
+      "type": "text",
+      "value": "Find quick answers to common inquiries about our clinic and services."
+    },
+    "text-33": {
+      "label": "<h3> What payment options do you accept?",
+      "type": "text",
+      "value": "What payment options do you accept?"
+    },
+    "text-34": {
+      "label": "<p> We accept all major credit cards, deb...",
+      "type": "text",
+      "value": "We accept all major credit cards, debit cards, and offer flexible financing options through third-party providers. Please speak with our patient coordinator for more details on payment plans and insurance."
+    },
+    "text-35": {
+      "label": "<h3> Do you accept dental insurance?",
+      "type": "text",
+      "value": "Do you accept dental insurance?"
+    },
+    "text-36": {
+      "label": "<p> Yes, we work with a wide range of den...",
+      "type": "text",
+      "value": "Yes, we work with a wide range of dental insurance providers and will assist you in maximizing your benefits. Please provide your insurance information when scheduling your appointment so we can verify coverage."
+    },
+    "text-37": {
+      "label": "<h3> How often should I visit the dentist?",
+      "type": "text",
+      "value": "How often should I visit the dentist?"
+    },
+    "text-38": {
+      "label": "<p> For most patients, we recommend visit...",
+      "type": "text",
+      "value": "For most patients, we recommend visiting every six months for a routine check-up and cleaning. However, depending on your oral health needs, your dentist may suggest a more frequent schedule."
+    },
+    "text-39": {
+      "label": "<h3> What safety measures are in place for...",
+      "type": "text",
+      "value": "What safety measures are in place for COVID-19?"
+    },
+    "text-40": {
+      "label": "<p> Your safety is our top priority. We a...",
+      "type": "text",
+      "value": "Your safety is our top priority. We adhere to the highest standards of sterilization and cleanliness, including enhanced PPE for staff, air purification systems, and staggered appointments to maintain social distancing."
+    },
+    "text-41": {
+      "label": "<h2> Schedule Your Premium Dental Experience",
+      "type": "text",
+      "value": "Schedule Your Premium Dental Experience"
+    },
+    "text-42": {
+      "label": "<p> Ready to achieve the smile you've alw...",
+      "type": "text",
+      "value": "Ready to achieve the smile you've always dreamed of? Contact us today to book your consultation or inquire about our services. Our friendly team is here to assist you."
+    },
+    "text-43": {
+      "label": "<h3> Send Us a Message",
+      "type": "text",
+      "value": "Send Us a Message"
+    },
+    "image-1": {
+      "label": "Luxurious dental clinic reception area with modern design",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1634047411861-59c2eaa2ec9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxsdXh1cnklMjBoZWFsdGhjYXJlfGVufDB8MHx8fDE3ODI5ODY1NjJ8MA&ixlib=rb-4.1.0&q=80&w=1600"
+    },
+    "image-2": {
+      "label": "Modern and comfortable dental clinic waiting room",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1704455306925-1401c3012117?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxkZW50YWwlMjBjbGluaWMlMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzgyOTg1NzAxfDA&ixlib=rb-4.1.0&q=80&w=800"
+    },
+    "image-3": {
+      "label": "Close-up of a dental procedure with modern equipment",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxjb3NtZXRpYyUyMGRlbnRpc3RyeXxlbnwwfDB8fHwxNzgyOTg1NzA3fDA&ixlib=rb-4.1.0&q=80&w=400"
+    },
+    "image-4": {
+      "label": "Dental implant procedure illustration",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxkZW50YWwlMjBpbXBsYW50c3xlbnwwfDB8fHwxNzgyOTg1NzA2fDA&ixlib=rb-4.1.0&q=80&w=400"
+    },
+    "image-5": {
+      "label": "Professional dentist consulting with a patient",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1770808250138-2ce5da80b312?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxsdXh1cnklMjBoZWFsdGhjYXJlfGVufDB8MHx8fDE3ODI5ODY1NjJ8MA&ixlib=rb-4.1.0&q=80&w=400"
+    },
+    "image-6": {
+      "label": "Modern dental equipment in a sterile environment",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxtb2Rlcm4lMjBkZW50YWwlMjBlcXVpcG1lbnR8ZW58MHwwfHx8MTc4Mjk4NTcwMnww&ixlib=rb-4.1.0&q=80&w=400"
+    },
+    "image-7": {
+      "label": "Smiling patient showing beautiful teeth after treatment",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1651375562100-e6b8e837753a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxzbWlsZSUyMGdhbGxlcnl8ZW58MHwwfHx8MTc4Mjk4NjU2NHww&ixlib=rb-4.1.0&q=80&w=600"
+    },
+    "image-8": {
+      "label": "Elegant and comfortable dental clinic waiting area",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1758812821349-1d2a4a96eecd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxkZW50YWwlMjBjbGluaWMlMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzgyOTg1NzAxfDA&ixlib=rb-4.1.0&q=80&w=600"
+    },
+    "image-9": {
+      "label": "Woman with a bright, confident smile",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1676292596549-405f608ab7bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxzbWlsZSUyMGdhbGxlcnl8ZW58MHwwfHx8MTc4Mjk4NjU2NHww&ixlib=rb-4.1.0&q=80&w=600"
+    },
+    "image-10": {
+      "label": "Modern dental treatment room with advanced equipment",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1777793389944-f7165259a05c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxkZW50YWwlMjBjbGluaWMlMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzgyOTg1NzAxfDA&ixlib=rb-4.1.0&q=80&w=600"
+    },
+    "image-11": {
+      "label": "Ergonomic dental chair in a clean setting",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1728342057908-7f6c4a3262f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxtb2Rlcm4lMjBkZW50YWwlMjBlcXVpcG1lbnR8ZW58MHwwfHx8MTc4Mjk4NTcwMnww&ixlib=rb-4.1.0&q=80&w=600"
+    },
+    "image-12": {
+      "label": "Close-up of a patient's healthy teeth",
+      "type": "image",
+      "value": "https://images.unsplash.com/photo-1663855473130-44fcfba68ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxzbWlsZSUyMGdhbGxlcnl8ZW58MHwwfHx8MTc4Mjk4NjU2NHww&ixlib=rb-4.1.0&q=80&w=600"
+    }
+  },
+  "details": [
+    {
+      "description": "At Dental Health, we believe that exceptional dental care goes beyond just treatments. It's about creating an atmosphere of comfort, trust, and personalized attention. Our state-of-the-art facility is designed to offer a serene and private experience, ensuring every visit is as pleasant as it is effective.",
+      "description_edit_id": "text-4",
+      "extra": {},
+      "id": "detail-1",
+      "image": "https://images.unsplash.com/photo-1704455306925-1401c3012117?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHxkZW50YWwlMjBjbGluaWMlMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzgyOTg1NzAxfDA&ixlib=rb-4.1.0&q=80&w=800",
+      "image_edit_id": "image-2",
+      "title": "Redefining Dental Excellence",
+      "title_edit_id": "text-3"
+    },
+    {
+      "description": "",
+      "description_edit_id": null,
+      "extra": {},
+      "id": "detail-2",
+      "image": "",
+      "image_edit_id": null,
+      "title": "Dental Health",
+      "title_edit_id": null
+    }
+  ]
+}

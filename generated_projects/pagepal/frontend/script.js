@@ -1,0 +1,83 @@
+html
+<!-- full index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PagePal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="logo">PagePal</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#library">Library</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to PagePal</h1>
+            <p>PagePal is a modern book management platform that helps you organize and discover new books.</p>
+            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwxfHxib29rc2hlbHZlc3xlbnwwfDB8fHwxNzgyODE2OTcyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Bookshelves">
+        </section>
+        <section id="about">
+            <h1>About Us</h1>
+            <p>PagePal is a team of book lovers who are passionate about helping you discover new books and manage your reading list.</p>
+            <img src="https://images.unsplash.com/photo-1513185041617-8ab03f83d6c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxib29rc2hlbHZlc3xlbnwwfDB8fHwxNzgyODE2OTcyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Reading nook">
+        </section>
+        <section id="services">
+            <h1>Our Services</h1>
+            <p>PagePal offers a range of services to help you manage your book collection and discover new books.</p>
+            <ul>
+                <li>Book cataloging and search</li>
+                <li>Personalized reading recommendations</li>
+                <li>Integration with popular e-book platforms</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1543248939-4296e1fea89b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwzfHxib29rc2hlbHZlc3xlbnwwfDB8fHwxNzgyODE2OTcyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Book club">
+        </section>
+        <section id="library">
+            <h1>Our Library</h1>
+            <p>PagePal's library is a collection of books that we have curated to help you discover new authors and genres.</p>
+            <img src="https://images.unsplash.com/photo-1593430980369-68efc5a5eb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHw0fHxib29rJTIwY2x1YnN8ZW58MHwwfHx8MTc4MjgxNjk3NHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Library catalog">
+        </section>
+        <section id="catalog">
+            <h1>Our Catalog</h1>
+            <p>PagePal's catalog is a comprehensive list of books that we have curated to help you discover new authors and genres.</p>
+            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwyfHxib29rJTIwY2x1YnN8ZW58MHwwfHx8MTc4MjgxNjk3NHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Book catalog">
+        </section>
+        <section id="search">
+            <h1>Search for Books</h1>
+            <p>Use our search feature to find books by author, title, or genre.</p>
+            <form>
+                <input type="search" placeholder="Search for books...">
+                <button type="submit">Search</button>
+            </form>
+            <img src="https://images.unsplash.com/photo-1618365908648-e71bd5716cba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwzfHxib29rJTIwY2x1YnN8ZW58MHwwfHx8MTc4MjgxNjk3NHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Book search">
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us to learn more about PagePal and our services.</p>
+            <form>
+                <input type="text" placeholder="Name...">
+                <input type="email" placeholder="Email...">
+                <textarea placeholder="Message..."></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <img src="https://images.unsplash.com/photo-1747147292047-7c61f1110897?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODY3Mjl8MHwxfHNlYXJjaHwxfHxsaWJyYXJ5JTIwY2F0YWxvZ3xlbnwwfDB8fHwxNzgyODE2OTc1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Contact us">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 PagePal</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

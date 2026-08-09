@@ -1,0 +1,958 @@
+:root {
+    /* Colors */
+    --color-white: #FFFFFF;
+    --color-black: #1A1A1A;
+    --color-light-gray: #F8F8F8;
+    --color-medium-gray: #E0E0E0;
+    --color-glass-white: rgba(255, 255, 255, 0.1);
+    --color-text-dark: var(--color-black);
+    --color-text-light: var(--color-white);
+
+    /* Typography */
+    --font-heading: "Open Sauce One", -system-ui, BlinkMacSystemFont, sans-serif;
+    --font-body: "Open Sauce One", -system-ui, BlinkMacSystemFont, sans-serif; /* Open Sauce One also for body as per user request */
+
+    --font-size-h1: clamp(3rem, 7vw + 1rem, 5.5rem); /* 48-64px desktop, scales down */
+    --font-size-h2: clamp(2.25rem, 5vw + 1rem, 3.5rem); /* 36-44px desktop, scales down */
+    --font-size-h3: clamp(1.5rem, 3vw + 1rem, 2rem); /* 24-28px desktop, scales down */
+    --font-size-h4: clamp(1.25rem, 2vw + 1rem, 1.75rem);
+    --font-size-body: 1.125rem; /* 18px */
+    --font-size-small: 0.875rem; /* 14px */
+
+    --line-height-heading: 1.1;
+    --line-height-body: 1.6;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500; /* Not explicitly defined in fonts, using 500 for consistency */
+    --font-weight-bold: 700;
+
+    /* Spacing Scale (8px base) */
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-2xl: 64px;
+    --space-3xl: 96px;
+    --space-4xl: 128px;
+    --section-padding-y: var(--space-4xl); /* 128px desktop */
+    --section-padding-y-mobile: var(--space-3xl); /* 96px mobile */
+
+    /* Border Radii */
+    --border-radius-sm: var(--space-xs); /* 8px */
+    --border-radius-md: var(--space-sm); /* 16px */
+    --border-radius-lg: var(--space-md); /* 24px */
+    --border-radius-xl: var(--space-lg); /* 32px */
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+    /* Transitions */
+    --transition-speed: 0.3s;
+    --transition-ease: ease-in-out;
+
+    /* Scroll Reveal Animation */
+    --reveal-duration: 600ms;
+    --reveal-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    color: var(--color-text-dark);
+    background-color: var(--color-white);
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading);
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+
+p {
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition-speed) var(--transition-ease);
+}
+
+a:hover {
+    color: var(--color-black); /* A subtle hover for general links */
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Focus States */
+:focus-visible {
+    outline: 2px solid var(--color-black);
+    outline-offset: 3px;
+    border-radius: var(--border-radius-sm);
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+}
+
+.btn {
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--font-weight-bold);
+    transition: background-color var(--transition-speed) var(--transition-ease),
+                color var(--transition-speed) var(--transition-ease),
+                box-shadow var(--transition-speed) var(--transition-ease);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+    background-color: rgba(26, 26, 26, 0.85); /* Slightly lighter black */
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 1px solid var(--color-medium-gray);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-light-gray);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-full-width {
+    width: 100%;
+}
+
+.glass-card {
+    background-color: var(--color-glass-white);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    transition: transform var(--transition-speed) var(--transition-ease), box-shadow var(--transition-speed) var(--transition-ease);
+}
+
+.glass-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.section {
+    padding-top: var(--section-padding-y);
+    padding-bottom: var(--section-padding-y);
+}
+
+/* Splash Screen */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-white);
+    z-index: 9999;
+    display: flex;
+    align-items: flex-end;
+    padding: var(--space-lg);
+    transition: opacity 700ms ease-out;
+}
+
+.splash-counter {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+    line-height: 1;
+}
+
+/* Navbar */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: var(--space-md) 0;
+    transition: background-color var(--transition-speed) var(--transition-ease),
+                backdrop-filter var(--transition-speed) var(--transition-ease),
+                box-shadow var(--transition-speed) var(--transition-ease);
+    background-color: rgba(255, 255, 255, 0.05); /* Slightly visible tint even when transparent */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.header.scrolled {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.navbar-brand a {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+}
+
+.brand-name {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h3);
+    white-space: nowrap;
+}
+
+.brand-tagline {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-dark);
+    margin-top: 2px;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.nav-links ul {
+    list-style: none; /* Fix: Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.nav-links ul li a {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-body);
+    position: relative;
+    padding: var(--space-xxs) 0;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-black);
+    transition: width var(--transition-speed) var(--transition-ease);
+}
+
+.nav-links ul li a:hover::after,
+.nav-links ul li a.active::after {
+    width: 100%;
+}
+
+.dental-emergency-desktop {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-body);
+    margin-left: var(--space-lg);
+    white-space: nowrap;
+}
+
+.nav-toggle {
+    display: none; /* Hidden by default on desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: var(--space-lg);
+    height: var(--space-sm);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1100; /* Ensure it's above other elements in the header */
+}
+
+.hamburger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-black);
+    transition: transform var(--transition-speed) var(--transition-ease),
+                opacity var(--transition-speed) var(--transition-ease);
+}
+
+.nav-toggle.open .hamburger-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.open .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.open .hamburger-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Navigation Overlay */
+.mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    right: 0; /* Starts off-screen */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-speed) var(--transition-ease),
+                visibility var(--transition-speed) var(--transition-ease),
+                transform var(--transition-speed) var(--transition-ease);
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space-4xl) var(--space-lg) var(--space-xl);
+}
+
+.mobile-nav-overlay.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.mobile-nav-menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav-menu nav ul li {
+    margin-bottom: var(--space-md);
+}
+
+.mobile-nav-link {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+    display: block;
+    padding: var(--space-xs) 0;
+    opacity: 0; /* For stagger animation */
+    transform: translateY(20px); /* For stagger animation */
+    transition: opacity 0.5s var(--reveal-ease), transform 0.5s var(--reveal-ease);
+}
+
+.mobile-nav-overlay.open .mobile-nav-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Stagger delay applied via JS */
+
+.mobile-nav-bottom {
+    text-align: center;
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-medium-gray);
+}
+
+.dental-emergency-mobile {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-md);
+    color: var(--color-text-dark);
+}
+
+/* Scroll Reveal Animations */
+.reveal-item {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity var(--reveal-duration) var(--reveal-ease),
+                transform var(--reveal-duration) var(--reveal-ease);
+}
+
+.reveal-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section 1: Hero */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: calc(var(--section-padding-y) + 80px); /* Adjust for fixed navbar */
+    padding-bottom: var(--section-padding-y);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Ensure content is above any potential pseudo-elements */
+}
+
+.feature-bars {
+    display: flex;
+    gap: var(--space-lg);
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.feature-bar {
+    background-color: var(--color-light-gray);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius-lg);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-dark);
+    white-space: nowrap;
+}
+
+.hero-card {
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    min-height: 500px; /* Ensure a decent height for the masked background */
+    display: grid;
+    grid-template-areas:
+        "top-left top-left top-left"
+        "bottom-left bottom-left bottom-right";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-md);
+    padding: var(--space-xl);
+    position: relative;
+    background-color: var(--color-white); /* Fallback */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0.8; /* Desktop focal point */
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-card-content-top-left {
+    grid-area: top-left;
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-dark);
+    align-self: start;
+}
+
+.hero-card-content-bottom-left {
+    grid-area: bottom-left;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xxs);
+    align-self: end;
+}
+
+.trusted-dentist {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-dark);
+}
+
+.dental-care-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading);
+    color: var(--color-text-dark);
+}
+
+.hero-card-content-bottom-right {
+    grid-area: bottom-right;
+    align-self: end;
+    justify-self: end;
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-dark);
+    text-align: right;
+}
+
+/* Section 2: Smile Gallery */
+.gallery-section {
+    background-color: var(--color-light-gray);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.gallery-card {
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    padding: var(--space-xl);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px; /* Ensure minimum height for cards */
+}
+
+.gallery-card h2 {
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-heading);
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-dark);
+}
+
+.gallery-card p {
+    font-size: var(--font-size-body);
+    color: var(--color-text-dark);
+}
+
+.gallery-card.card-1 {
+    grid-column: span 1;
+    background-position: center 0.65; /* Gallery Desktop focal point */
+    background-color: var(--color-white); /* Fallback */
+}
+
+.gallery-card.card-2 {
+    grid-column: span 1;
+    background-color: var(--color-glass-white);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gallery-card.card-2 p {
+    margin-bottom: var(--space-md);
+}
+
+.gallery-card.card-3 {
+    grid-column: span 1;
+    background-position: center 0.65; /* Gallery Desktop focal point */
+    background-color: var(--color-white); /* Fallback */
+    display: flex;
+    align-items: flex-end; /* Align content to bottom */
+}
+
+.gallery-card.card-3 h2 {
+    margin-bottom: 0; /* Remove bottom margin for tight alignment */
+}
+
+.gallery-card.card-4 {
+    grid-column: span 1;
+    background-color: var(--color-white); /* Fallback for service list */
+    padding: var(--space-lg);
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.service-item {
+    padding: var(--space-md);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: var(--font-weight-medium);
+    transition: background-color var(--transition-speed) var(--transition-ease),
+                box-shadow var(--transition-speed) var(--transition-ease),
+                border var(--transition-speed) var(--transition-ease);
+}
+
+.service-item.active {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: var(--shadow-sm);
+}
+
+.service-item:not(.active) {
+    background-color: var(--color-glass-white);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.service-item:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-md);
+}
+
+.service-item-name {
+    font-size: var(--font-size-body);
+    line-height: 1.3;
+    white-space: pre-line; /* Preserve newlines from JS data */
+}
+
+.service-item-num {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-medium-gray);
+}
+
+/* Section 3: Implant Dentistry */
+.implant-section {
+    background-color: var(--color-white);
+}
+
+.implant-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: start;
+}
+
+.implant-left-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+.implant-heading-card {
+    grid-column: span 2;
+    padding: var(--space-xl);
+}
+
+.implant-heading-card h2 {
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-heading);
+    margin-bottom: var(--space-xs);
+}
+
+.implant-heading-card .subtitle {
+    font-size: var(--font-size-body);
+    color: var(--color-text-dark);
+}
+
+.implant-image-card {
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    background-color: var(--color-light-gray); /* Fallback */
+    transition: transform var(--transition-speed) var(--transition-ease), box-shadow var(--transition-speed) var(--transition-ease);
+}
+
+.implant-image-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.implant-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 1 / 1; /* Make images square */
+}
+
+.implant-consultation-card {
+    grid-column: span 2;
+    padding: var(--space-xl);
+    text-align: center;
+}
+
+.implant-consultation-card h3 {
+    font-size: var(--font-size-h3);
+    margin-bottom: var(--space-xs);
+}
+
+.implant-consultation-card p {
+    font-size: var(--font-size-body);
+    margin-bottom: var(--space-md);
+}
+
+.implant-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.implant-large-image-wrapper {
+    position: relative;
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    background-color: var(--color-light-gray); /* Fallback */
+    transition: transform var(--transition-speed) var(--transition-ease), box-shadow var(--transition-speed) var(--transition-ease);
+}
+.implant-large-image-wrapper:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+
+.implant-large-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 16 / 9; /* Landscape aspect ratio */
+}
+
+.implant-overlay-card {
+    position: absolute;
+    bottom: var(--space-lg);
+    left: var(--space-lg);
+    right: var(--space-lg);
+    padding: var(--space-md) var(--space-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--border-radius-lg);
+}
+
+.implant-overlay-card h4 {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-heading);
+    margin: 0;
+}
+
+.implant-glass-card {
+    padding: var(--space-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.implant-glass-card h4 {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-heading);
+    margin: 0;
+}
+
+.arrow-circle {
+    width: var(--space-xl);
+    height: var(--space-xl);
+    border-radius: 50%;
+    border: 1px solid var(--color-text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-bold);
+    transition: background-color var(--transition-speed) var(--transition-ease),
+                color var(--transition-speed) var(--transition-ease);
+}
+
+.arrow-circle:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* Hidden image preloaders */
+.hidden-preloader {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    opacity: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) { /* Navbar specific breakpoint */
+    .nav-links {
+        display: none; /* Hide desktop nav links */
+    }
+    .dental-emergency-desktop {
+        display: none;
+    }
+    .nav-toggle {
+        display: flex; /* Show hamburger */
+    }
+}
+
+@media (max-width: 767px) { /* Mobile breakpoint */
+    .container {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+    }
+
+    .section {
+        padding-top: var(--section-padding-y-mobile);
+        padding-bottom: var(--section-padding-y-mobile);
+    }
+
+    /* Hero Section */
+    .hero-section {
+        min-height: auto; /* Allow hero to shrink on mobile */
+        padding-top: calc(var(--section-padding-y-mobile) + 80px); /* Adjust for fixed navbar */
+    }
+
+    .feature-bars {
+        justify-content: center;
+        gap: var(--space-md);
+    }
+
+    .hero-card {
+        grid-template-areas:
+            "top-left"
+            "bottom-left"
+            "bottom-right";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: var(--space-lg);
+        min-height: 400px;
+        background-position: center 0.7; /* Mobile focal point */
+    }
+
+    .hero-card-content-top-left {
+        text-align: center;
+        font-size: var(--font-size-h4);
+    }
+
+    .hero-card-content-bottom-left {
+        align-items: center;
+        text-align: center;
+    }
+
+    .dental-care-title {
+        font-size: clamp(2.5rem, 10vw, 3.5rem); /* Fluid scaling for hero title */
+    }
+
+    .hero-card-content-bottom-right {
+        justify-self: center;
+        text-align: center;
+        font-size: var(--font-size-h4);
+    }
+
+    /* Gallery Section */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-card {
+        grid-column: span 1;
+        padding: var(--space-lg);
+    }
+    .gallery-card.card-1, .gallery-card.card-3 {
+        background-position: center 0.6; /* Gallery Mobile focal point */
+    }
+
+    /* Implant Section */
+    .implant-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .implant-left-column {
+        grid-template-columns: 1fr;
+    }
+
+    .implant-heading-card,
+    .implant-consultation-card {
+        grid-column: span 1;
+        padding: var(--space-lg);
+    }
+
+    .implant-image-card img {
+        aspect-ratio: 4 / 3; /* More horizontal for mobile */
+    }
+
+    .implant-overlay-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: var(--space-xs);
+        padding: var(--space-md);
+        left: var(--space-md);
+        right: var(--space-md);
+    }
+    .implant-overlay-card h4 {
+        font-size: var(--font-size-h4);
+    }
+
+    .implant-glass-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: var(--space-xs);
+        padding: var(--space-lg);
+    }
+    .implant-glass-card h4 {
+        font-size: var(--font-size-h4);
+    }
+}
+
+/* Print styles for accessibility or actual printing */
+@media print {
+    .header, .nav-toggle, .mobile-nav-overlay, #splash-screen {
+        display: none !important;
+    }
+    body {
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
+    .section {
+        page-break-inside: avoid;
+    }
+    a {
+        text-decoration: underline;
+        color: inherit;
+    }
+}
